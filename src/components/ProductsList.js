@@ -1,7 +1,6 @@
-// src/components/ProductsList.js
-import React, { useState } from 'react'; // Importa React y useState para manejar el estado
-import { FlatList, Pressable, StyleSheet, Text, View } from 'react-native'; // Importa los componentes necesarios de react-native
-import ProductModal from './ProductModal'; // Importa el componente ProductModal
+import React, { useState } from 'react'; 
+import { FlatList, Pressable, StyleSheet, Text, View } from 'react-native'; 
+import ProductModal from './ProductModal'; 
 
 const ProductsList = () => {
   const [products] = useState([ // Estado inicial con un array de productos
@@ -13,6 +12,7 @@ const ProductsList = () => {
   ]);
 
   const [modalVisible, setModalVisible] = useState(false); // Estado para controlar la visibilidad del modal
+
   const [selectedProduct, setSelectedProduct] = useState(''); // Estado para almacenar el nombre del producto seleccionado
 
   const handlePress = (productName) => { // Función para manejar la presión en un producto
@@ -45,21 +45,21 @@ const ProductsList = () => {
 // Estilos para la lista de productos
 const styles = StyleSheet.create({
   container: {
-    marginTop: 15, // Espacio superior del contenedor
+    marginTop: 15, 
   },
   item: {
-    backgroundColor: "#ffa07a", // Color de fondo del botón del producto
-    borderRadius: 10, // Bordes redondeados del botón
-    paddingBottom: 5, // Espaciado interno inferior
-    padding: 8, // Espaciado interno
-    marginTop: 8, // Espacio superior entre productos
+    backgroundColor: "#ffa07a", 
+    borderRadius: 10, 
+    paddingBottom: 5, 
+    padding: 8, 
+    marginTop: 8, 
   },
   itemText: {
-    textAlign: 'center', // Centra el texto horizontalmente
-    fontSize: 18, // Tamaño de la fuente del texto
-    color: "white", // Color del texto
-    fontWeight: "bold", // Peso de la fuente
+    textAlign: 'center', 
+    fontSize: 18,
+    color: "white", 
+    fontWeight: "bold", 
   }
 });
 
-export default ProductsList; // Exporta el componente ProductsList para que pueda ser utilizado en otros archivos
+export default ProductsList; 
