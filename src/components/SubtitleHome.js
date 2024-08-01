@@ -15,7 +15,7 @@ export default SubtitleHome
 const styles = StyleSheet.create({
     container: {
         alignItems: 'center',
-        paddingTop: 30,
+        paddingTop: 10,
       },
       subtitle: {
         fontSize: 20,
@@ -24,8 +24,7 @@ const styles = StyleSheet.create({
         paddingTop: 30,
       },
     down: {
-        paddingTop: 30,
-        flex: 1,
+        paddingTop: 10,
         textAlign: 'center',
       }
 })

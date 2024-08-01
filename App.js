@@ -30,7 +30,8 @@ const App = () => {
       <Text style={styles.titulo}>Accesorios</Text>
       <TitleHome />
       <SubtitleHome />
-      <ProductsList />
+      <ProductsList/>
+
       <StatusBar style="auto" />
     </View>
   );
@@ -42,7 +43,6 @@ const styles = StyleSheet.create({
     backgroundColor: 'darksalmon',
     alignItems: 'center',
     paddingTop: 50,
-    width: '100%',
   },
   titulo: {
     color: '#fff',
