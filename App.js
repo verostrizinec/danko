@@ -1,20 +1,57 @@
 import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, View } from 'react-native';
+import Logo from './src/components/Logo';
+import * as Font from 'expo-font';
+import React, { useState, useEffect } from 'react';
+import TitleHome from './src/components/TitleHome';
+import SubtitleHome from './src/components/SubtitleHome';
+import ProductsList from './src/components/ProductsList';
 
-export default function App() {
+const App = () => {
+  const [fontLoaded, setFontLoaded] = useState(false);
+
+  useEffect(() => {
+    async function loadFont() {
+      await Font.loadAsync({
+        'Edu': require('./assets/fonts/EduAUVICWANTHand-VariableFont_wght.ttf'),
+      });
+      setFontLoaded(true);
+    }
+    loadFont();
+  }, []);
+
+  if (!fontLoaded) {
+    return null; // Muestra una pantalla de carga si la fuente no está cargada
+  }
+
   return (
     <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
+      <Logo />
+      <Text style={styles.titulo}>Accesorios</Text>
+      <TitleHome />
+      <SubtitleHome />
+      <ProductsList />
       <StatusBar style="auto" />
     </View>
   );
-}
+};
 
 const styles = StyleSheet.create({
   container: {
-    flex: 1,
-    backgroundColor: '#fff',
+    flex: 1, // Asegura que el contenedor ocupe todo el espacio disponible
+    backgroundColor: 'darksalmon',
     alignItems: 'center',
-    justifyContent: 'center',
+    paddingTop: 50,
+    width: '100%',
+  },
+  titulo: {
+    color: '#fff',
+    fontWeight: 'bold',
+    fontSize: 16, // Ajuste el tamaño de la fuente para mejor visibilidad
+    marginTop: -50, // Ajustado para evitar superposición
+    fontFamily: "Edu",
+    marginLeft: 45,
   },
 });
+
+export default App;
