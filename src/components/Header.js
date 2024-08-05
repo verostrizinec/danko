@@ -1,8 +1,7 @@
 import { StyleSheet, Text, View, Image } from 'react-native'
-import React from 'react'
-import { endAsyncEvent } from 'react-native/Libraries/Performance/Systrace'
 
-const Logo = () => {
+
+const Header = () => {
   return (
     <View>
      <Image
@@ -13,7 +12,7 @@ const Logo = () => {
   )
 }
 
-export default Logo
+export default Header
 
 const styles = StyleSheet.create({
     logo: {

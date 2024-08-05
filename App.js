@@ -1,11 +1,13 @@
 import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, View } from 'react-native';
-import Logo from './src/components/Logo';
 import * as Font from 'expo-font';
 import React, { useState, useEffect } from 'react';
 import TitleHome from './src/components/TitleHome';
 import SubtitleHome from './src/components/SubtitleHome';
 import ProductsList from './src/components/ProductsList';
+import Header from './src/components/Header';
+import ItemListCategories from './src/screens/ItemListCategories';
+import Home from './src/screens/Home';
 
 const App = () => {
   const [fontLoaded, setFontLoaded] = useState(false);
@@ -26,11 +28,13 @@ const App = () => {
 
   return (
     <View style={styles.container}>
-      <Logo />
+      <Home/>
+      <Header />
       <Text style={styles.titulo}>Accesorios</Text>
-      <TitleHome />
+      
+      {/*<TitleHome />
       <SubtitleHome />
-      <ProductsList/>
+      <ProductsList/>*/}
 
       <StatusBar style="auto" />
     </View>

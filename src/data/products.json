@@ -1,0 +1,370 @@
+[
+    {
+        "id": 0,
+        "category": "aritos",
+        "precio": 1000,
+        "stock": 10,
+        "brand": "Danko Accesorios",
+        "description": "Aros Chocolate"
+    },
+    {
+        "id": 1,
+        "category": "aritos",
+        "precio": 1000,
+        "stock": 10,
+        "brand": "Danko Accesorios",
+        "description": "Aros Palta"
+    },
+    {
+        "id": 2,
+        "category": "aritos",
+        "precio": 1000,
+        "stock": 10,
+        "brand": "Danko Accesorios",
+        "description": "Aros Argentina"
+    },
+    {
+        "id": 3,
+        "category": "aritos",
+        "precio": 1000,
+        "stock": 10,
+        "brand": "Danko Accesorios",
+        "description": "Aros Pizza"
+    },
+    {
+        "id": 4,
+        "category": "aritos",
+        "precio": 1000,
+        "stock": 10,
+        "brand": "Danko Accesorios",
+        "description": "Aros Boca Juniors"
+    },
+    {
+        "id": 5,
+        "category": "hebillas",
+        "precio": 1000,
+        "stock": 10,
+        "brand": "Danko Accesorios",
+        "description": "Hebilla Tricolor"
+    },
+    {
+        "id": 6,
+        "category": "hebillas",
+        "precio": 1000,
+        "stock": 10,
+        "brand": "Danko Accesorios",
+        "description": "Hebilla Boca Juniors"
+    },
+    {
+        "id": 7,
+        "category": "hebillas",
+        "precio": 1000,
+        "stock": 10,
+        "brand": "Danko Accesorios",
+        "description": "Hebillas Flores"
+    },
+    {
+        "id": 8,
+        "category": "escarapelas",
+        "precio": 1000,
+        "stock": 10,
+        "brand": "Danko Accesorios",
+        "description": "Escarapela Argentina Mate"
+    },
+    {
+        "id": 9,
+        "category": "escarapelas",
+        "precio": 1000,
+        "stock": 10,
+        "brand": "Danko Accesorios",
+        "description": "Escarapela Argentina Pastelito"
+    },
+    {
+        "id": 10,
+        "category": "escarapelas",
+        "precio": 1000,
+        "stock": 10,
+        "brand": "Danko Accesorios",
+        "description": "Escarapela Argentina Redonda"
+    },
+    {
+        "id": 11,
+        "category": "anillos",
+        "precio": 1000,
+        "stock": 10,
+        "brand": "Danko Accesorios",
+        "description": "Anillo Blanco"
+    },
+    {
+        "id": 12,
+        "category": "anillos",
+        "precio": 1000,
+        "stock": 10,
+        "brand": "Danko Accesorios",
+        "description": "Anillo Negro"
+    },
+    {
+        "id": 13,
+        "category": "anillos",
+        "precio": 1000,
+        "stock": 10,
+        "brand": "Danko Accesorios",
+        "description": "Anillo Rojo"
+    },
+    {
+        "id": 14,
+        "category": "anillos",
+        "precio": 1000,
+        "stock": 10,
+        "brand": "Danko Accesorios",
+        "description": "Anillo Verde"
+    },
+    {
+        "id": 15,
+        "category": "anillos",
+        "precio": 1000,
+        "stock": 10,
+        "brand": "Danko Accesorios",
+        "description": "Anillo Gris"
+    },
+    {
+        "id": 16,
+        "category": "prendedores",
+        "precio": 1000,
+        "stock": 10,
+        "brand": "Danko Accesorios",
+        "description": "Prendedor A"
+    },
+    {
+        "id": 17,
+        "category": "prendedores",
+        "precio": 1000,
+        "stock": 10,
+        "brand": "Danko Accesorios",
+        "description": "Prendedor B"
+    },
+    {
+        "id": 18,
+        "category": "prendedores",
+        "precio": 1000,
+        "stock": 10,
+        "brand": "Danko Accesorios",
+        "description": "Prendedor C"
+    },
+    {
+        "id": 19,
+        "category": "prendedores",
+        "precio": 1000,
+        "stock": 10,
+        "brand": "Danko Accesorios",
+        "description": "Prendedor D"
+    },
+    {
+        "id": 20,
+        "category": "prendedores",
+        "precio": 1000,
+        "stock": 10,
+        "brand": "Danko Accesorios",
+        "description": "Prendedor E"
+    },
+    {
+        "id": 21,
+        "category": "porta sahumerio",
+        "precio": 1000,
+        "stock": 10,
+        "brand": "Danko Accesorios",
+        "description": "Porta sahumerio A"
+    },
+    {
+        "id": 22,
+        "category": "porta sahumerio",
+        "precio": 1000,
+        "stock": 10,
+        "brand": "Danko Accesorios",
+        "description": "Porta sahumerio B"
+    },
+    {
+        "id": 23,
+        "category": "porta sahumerio",
+        "precio": 1000,
+        "stock": 10,
+        "brand": "Danko Accesorios",
+        "description": "Porta sahumerio C"
+    },
+    {
+        "id": 24,
+        "category": "porta sahumerio",
+        "precio": 1000,
+        "stock": 10,
+        "brand": "Danko Accesorios",
+        "description": "Porta sahumerio D"
+    },
+    {
+        "id": 25,
+        "category": "porta sahumerio",
+        "precio": 1000,
+        "stock": 10,
+        "brand": "Danko Accesorios",
+        "description": "Porta sahumerio E"
+    },
+    {
+        "id": 26,
+        "category": "llaveros",
+        "precio": 1000,
+        "stock": 10,
+        "brand": "Danko Accesorios",
+        "description": "Llavero A"
+    },
+    {
+        "id": 27,
+        "category": "llaveros",
+        "precio": 1000,
+        "stock": 10,
+        "brand": "Danko Accesorios",
+        "description": "Llavero B"
+    },
+    {
+        "id": 28,
+        "category": "llaveros",
+        "precio": 1000,
+        "stock": 10,
+        "brand": "Danko Accesorios",
+        "description": "Llavero C"
+    },
+    {
+        "id": 29,
+        "category": "llaveros",
+        "precio": 1000,
+        "stock": 10,
+        "brand": "Danko Accesorios",
+        "description": "Llavero D"
+    },
+    {
+        "id": 30,
+        "category": "llaveros",
+        "precio": 1000,
+        "stock": 10,
+        "brand": "Danko Accesorios",
+        "description": "Llavero E"
+    },
+    {
+        "id": 31,
+        "category": "pines",
+        "precio": 1000,
+        "stock": 10,
+        "brand": "Danko Accesorios",
+        "description": "Pin A"
+    },
+    {
+        "id": 32,
+        "category": "pines",
+        "precio": 1000,
+        "stock": 10,
+        "brand": "Danko Accesorios",
+        "description": "Pin B"
+    },
+    {
+        "id": 33,
+        "category": "pines",
+        "precio": 1000,
+        "stock": 10,
+        "brand": "Danko Accesorios",
+        "description": "Pin C"
+    },
+    {
+        "id": 34,
+        "category": "pines",
+        "precio": 1000,
+        "stock": 10,
+        "brand": "Danko Accesorios",
+        "description": "Pin D"
+    },
+    {
+        "id": 35,
+        "category": "pines",
+        "precio": 1000,
+        "stock": 10,
+        "brand": "Danko Accesorios",
+        "description": "Pin E"
+    },
+    {
+        "id": 36,
+        "category": "imanes",
+        "precio": 1000,
+        "stock": 10,
+        "brand": "Danko Accesorios",
+        "description": "Iman A"
+    },
+    {
+        "id": 37,
+        "category": "imanes",
+        "precio": 1000,
+        "stock": 10,
+        "brand": "Danko Accesorios",
+        "description": "Iman B"
+    },
+    {
+        "id": 38,
+        "category": "imanes",
+        "precio": 1000,
+        "stock": 10,
+        "brand": "Danko Accesorios",
+        "description": "Iman C"
+    },
+    {
+        "id": 39,
+        "category": "imanes",
+        "precio": 1000,
+        "stock": 10,
+        "brand": "Danko Accesorios",
+        "description": "Iman D"
+    },
+    {
+        "id": 40,
+        "category": "imanes",
+        "precio": 1000,
+        "stock": 10,
+        "brand": "Danko Accesorios",
+        "description": "Iman E"
+    },
+    {
+        "id": 41,
+        "category": "producto navideño",
+        "precio": 1000,
+        "stock": 10,
+        "brand": "Danko Accesorios",
+        "description": "Producto Navideño A"
+    },
+    {
+        "id": 42,
+        "category": "producto navideño",
+        "precio": 1000,
+        "stock": 10,
+        "brand": "Danko Accesorios",
+        "description": "Producto Navideño B"
+    },
+    {
+        "id": 43,
+        "category": "producto navideño",
+        "precio": 1000,
+        "stock": 10,
+        "brand": "Danko Accesorios",
+        "description": "Producto Navideño C"
+    },
+    {
+        "id": 44,
+        "category": "producto navideño",
+        "precio": 1000,
+        "stock": 10,
+        "brand": "Danko Accesorios",
+        "description": "Producto Navideño D"
+    },
+    {
+        "id": 45,
+        "category": "producto navideño",
+        "precio": 1000,
+        "stock": 10,
+        "brand": "Danko Accesorios",
+        "description": "Producto Navideño E"
+    }
+]
