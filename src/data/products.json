@@ -1,51 +1,57 @@
 [
     {
         "id": 0,
-        "category": "aritos",
+        "category": "Aritos",
         "precio": 1000,
         "stock": 10,
         "brand": "Danko Accesorios",
-        "description": "Aros Chocolate"
+        "description": "Aros Chocolate",
+        "thumbnail": "https://i.ibb.co/4Mqmp2D/aros-Choco.jpg"
     },
     {
         "id": 1,
-        "category": "aritos",
+        "category": "Aritos",
         "precio": 1000,
         "stock": 10,
         "brand": "Danko Accesorios",
-        "description": "Aros Palta"
+        "description": "Aros Palta",
+        "thumbnail": "https://i.ibb.co/T4znqnh/aros-Palta.jpg"
     },
     {
         "id": 2,
-        "category": "aritos",
+        "category": "Aritos",
         "precio": 1000,
         "stock": 10,
         "brand": "Danko Accesorios",
-        "description": "Aros Argentina"
+        "description": "Aros Argentina",
+        "thumbnail": "https://i.ibb.co/xqdRX3Y/arosArg.jpg"
     },
     {
         "id": 3,
-        "category": "aritos",
+        "category": "Aritos",
         "precio": 1000,
         "stock": 10,
         "brand": "Danko Accesorios",
-        "description": "Aros Pizza"
+        "description": "Aros Pizza",
+        "thumbnail": "https://i.ibb.co/fH3zMpM/aros-Pizza.jpg"
     },
     {
         "id": 4,
-        "category": "aritos",
+        "category": "Aritos",
         "precio": 1000,
         "stock": 10,
         "brand": "Danko Accesorios",
-        "description": "Aros Boca Juniors"
+        "description": "Aros Boca Juniors",
+        "thumbnail": "https://i.ibb.co/RcGj7CW/arosBoca.jpg"
     },
     {
         "id": 5,
-        "category": "hebillas",
+        "category": "Hebillas",
         "precio": 1000,
         "stock": 10,
         "brand": "Danko Accesorios",
-        "description": "Hebilla Tricolor"
+        "description": "Hebilla Tricolor",
+        "thumbnail": "https://i.ibb.co/gwyfMk7/hebillas.jpg"
     },
     {
         "id": 6,
@@ -53,71 +59,80 @@
         "precio": 1000,
         "stock": 10,
         "brand": "Danko Accesorios",
-        "description": "Hebilla Boca Juniors"
+        "description": "Hebilla Boca Juniors",
+        "thumbnail": "https://i.ibb.co/gwyfMk7/hebillas.jpg"
     },
     {
         "id": 7,
-        "category": "hebillas",
+        "category": "Hebillas",
         "precio": 1000,
         "stock": 10,
         "brand": "Danko Accesorios",
-        "description": "Hebillas Flores"
+        "description": "Hebillas Flores",
+        "thumbnail": "https://i.ibb.co/gwyfMk7/hebillas.jpg"
     },
     {
         "id": 8,
-        "category": "escarapelas",
+        "category": "Escarapelas",
         "precio": 1000,
         "stock": 10,
         "brand": "Danko Accesorios",
-        "description": "Escarapela Argentina Mate"
+        "description": "Escarapela Argentina Mate",
+        "thumbnail": "https://i.ibb.co/qkvhFFk/escarapela-Mate.jpg"
     },
     {
         "id": 9,
-        "category": "escarapelas",
+        "category": "Escarapelas",
         "precio": 1000,
         "stock": 10,
         "brand": "Danko Accesorios",
-        "description": "Escarapela Argentina Pastelito"
+        "description": "Escarapela Argentina Pastelito",
+        "thumbnail": "https://i.ibb.co/dDXqbR4/escarapela-Pastel.jpg"
     },
     {
         "id": 10,
-        "category": "escarapelas",
+        "category": "Escarapelas",
         "precio": 1000,
         "stock": 10,
         "brand": "Danko Accesorios",
-        "description": "Escarapela Argentina Redonda"
+        "description": "Escarapela Argentina Redonda",
+        "thumbnail": "https://i.ibb.co/SQ5f6TT/escarapela-Redonda.jpg"
     },
     {
         "id": 11,
-        "category": "anillos",
+        "category": "Anillos",
         "precio": 1000,
         "stock": 10,
         "brand": "Danko Accesorios",
-        "description": "Anillo Blanco"
+        "description": "Anillo Blanco",
+        "thumbnail": "https://i.ibb.co/gzGvNPN/anillos.jpg"
     },
     {
         "id": 12,
-        "category": "anillos",
+        "category": "Anillos",
         "precio": 1000,
         "stock": 10,
         "brand": "Danko Accesorios",
-        "description": "Anillo Negro"
+        "description": "Anillo Negro",
+        "thumbnail": "https://i.ibb.co/gzGvNPN/anillos.jpg"
     },
     {
         "id": 13,
-        "category": "anillos",
+        "category": "Anillos",
         "precio": 1000,
         "stock": 10,
         "brand": "Danko Accesorios",
-        "description": "Anillo Rojo"
+        "description": "Anillo Rojo",
+        "thumbnail": "https://i.ibb.co/gzGvNPN/anillos.jpg"
     },
     {
         "id": 14,
-        "category": "anillos",
+        "category": "Anillos",
         "precio": 1000,
         "stock": 10,
         "brand": "Danko Accesorios",
-        "description": "Anillo Verde"
+        "description": "Anillo Verde",
+        "thumbnail": "https://i.ibb.co/gzGvNPN/anillos.jpg"
     },
     {
         "id": 15,
@@ -125,135 +140,153 @@
         "precio": 1000,
         "stock": 10,
         "brand": "Danko Accesorios",
-        "description": "Anillo Gris"
+        "description": "Anillo Gris",
+        "thumbnail": "https://i.ibb.co/gzGvNPN/anillos.jpg"
     },
     {
         "id": 16,
-        "category": "prendedores",
+        "category": "Prendedores",
         "precio": 1000,
         "stock": 10,
         "brand": "Danko Accesorios",
-        "description": "Prendedor A"
+        "description": "Prendedor A",
+        "thumbnail": "https://i.ibb.co/Svz95jz/danko-Con-Fondo.png"
     },
     {
         "id": 17,
-        "category": "prendedores",
+        "category": "Prendedores",
         "precio": 1000,
         "stock": 10,
         "brand": "Danko Accesorios",
-        "description": "Prendedor B"
+        "description": "Prendedor B",
+        "thumbnail": "https://i.ibb.co/Svz95jz/danko-Con-Fondo.png"
     },
     {
         "id": 18,
-        "category": "prendedores",
+        "category": "Prendedores",
         "precio": 1000,
         "stock": 10,
         "brand": "Danko Accesorios",
-        "description": "Prendedor C"
+        "description": "Prendedor C",
+        "thumbnail": "https://i.ibb.co/Svz95jz/danko-Con-Fondo.png"
     },
     {
         "id": 19,
-        "category": "prendedores",
+        "category": "Prendedores",
         "precio": 1000,
         "stock": 10,
         "brand": "Danko Accesorios",
-        "description": "Prendedor D"
+        "description": "Prendedor D",
+        "thumbnail": "https://i.ibb.co/Svz95jz/danko-Con-Fondo.png"
     },
     {
         "id": 20,
-        "category": "prendedores",
+        "category": "Prendedores",
         "precio": 1000,
         "stock": 10,
         "brand": "Danko Accesorios",
-        "description": "Prendedor E"
+        "description": "Prendedor E",
+        "thumbnail": "https://i.ibb.co/Svz95jz/danko-Con-Fondo.png"
     },
     {
         "id": 21,
-        "category": "porta sahumerio",
+        "category": "Porta Sahumerios",
         "precio": 1000,
         "stock": 10,
         "brand": "Danko Accesorios",
-        "description": "Porta sahumerio A"
+        "description": "Porta sahumerio A",
+        "thumbnail": "https://i.ibb.co/Svz95jz/danko-Con-Fondo.png"
+
     },
     {
         "id": 22,
-        "category": "porta sahumerio",
+        "category": "Porta Sahumerios",
         "precio": 1000,
         "stock": 10,
         "brand": "Danko Accesorios",
-        "description": "Porta sahumerio B"
+        "description": "Porta sahumerio B",
+        "thumbnail": "https://i.ibb.co/Svz95jz/danko-Con-Fondo.png"
     },
     {
         "id": 23,
-        "category": "porta sahumerio",
+        "category": "Porta Sahumerios",
         "precio": 1000,
         "stock": 10,
         "brand": "Danko Accesorios",
-        "description": "Porta sahumerio C"
+        "description": "Porta sahumerio C",
+        "thumbnail": "https://i.ibb.co/Svz95jz/danko-Con-Fondo.png"
     },
     {
         "id": 24,
-        "category": "porta sahumerio",
+        "category": "Porta Sahumerios",
         "precio": 1000,
         "stock": 10,
         "brand": "Danko Accesorios",
-        "description": "Porta sahumerio D"
+        "description": "Porta sahumerio D",
+        "thumbnail": "https://i.ibb.co/Svz95jz/danko-Con-Fondo.png"
     },
     {
         "id": 25,
-        "category": "porta sahumerio",
+        "category": "Porta Sahumerios",
         "precio": 1000,
         "stock": 10,
         "brand": "Danko Accesorios",
-        "description": "Porta sahumerio E"
+        "description": "Porta sahumerio E",
+        "thumbnail": "https://i.ibb.co/Svz95jz/danko-Con-Fondo.png"
     },
     {
         "id": 26,
-        "category": "llaveros",
+        "category": "Llaveros",
         "precio": 1000,
         "stock": 10,
         "brand": "Danko Accesorios",
-        "description": "Llavero A"
+        "description": "Llavero A",
+        "thumbnail": "https://i.ibb.co/KDgdcpf/llaveros.jpg"
     },
     {
         "id": 27,
-        "category": "llaveros",
+        "category": "Llaveros",
         "precio": 1000,
         "stock": 10,
         "brand": "Danko Accesorios",
-        "description": "Llavero B"
+        "description": "Llavero B",
+        "thumbnail": "https://i.ibb.co/KDgdcpf/llaveros.jpg"
     },
     {
         "id": 28,
-        "category": "llaveros",
+        "category": "Llaveros",
         "precio": 1000,
         "stock": 10,
         "brand": "Danko Accesorios",
-        "description": "Llavero C"
+        "description": "Llavero C",
+        "thumbnail": "https://i.ibb.co/KDgdcpf/llaveros.jpg"
     },
     {
         "id": 29,
-        "category": "llaveros",
+        "category": "Llaveros",
         "precio": 1000,
         "stock": 10,
         "brand": "Danko Accesorios",
-        "description": "Llavero D"
+        "description": "Llavero D",
+        "thumbnail": "https://i.ibb.co/KDgdcpf/llaveros.jpg"
     },
     {
         "id": 30,
-        "category": "llaveros",
+        "category": "Llaveros",
         "precio": 1000,
         "stock": 10,
         "brand": "Danko Accesorios",
-        "description": "Llavero E"
+        "description": "Llavero E",
+        "thumbnail": "https://i.ibb.co/KDgdcpf/llaveros.jpg"
     },
     {
         "id": 31,
-        "category": "pines",
+        "category": "Pines",
         "precio": 1000,
         "stock": 10,
         "brand": "Danko Accesorios",
-        "description": "Pin A"
+        "description": "Pin A",
+        "thumbnail": "https://i.ibb.co/Svz95jz/danko-Con-Fondo.png"
     },
     {
         "id": 32,
@@ -261,110 +294,124 @@
         "precio": 1000,
         "stock": 10,
         "brand": "Danko Accesorios",
-        "description": "Pin B"
+        "description": "Pin B",
+        "thumbnail": "https://i.ibb.co/Svz95jz/danko-Con-Fondo.png"
     },
     {
         "id": 33,
-        "category": "pines",
+        "category": "Pines",
         "precio": 1000,
         "stock": 10,
         "brand": "Danko Accesorios",
-        "description": "Pin C"
+        "description": "Pin C",
+        "thumbnail": "https://i.ibb.co/Svz95jz/danko-Con-Fondo.png"
     },
     {
         "id": 34,
-        "category": "pines",
+        "category": "Pines",
         "precio": 1000,
         "stock": 10,
         "brand": "Danko Accesorios",
-        "description": "Pin D"
+        "description": "Pin D",
+        "thumbnail": "https://i.ibb.co/Svz95jz/danko-Con-Fondo.png"
     },
     {
         "id": 35,
-        "category": "pines",
+        "category": "Pines",
         "precio": 1000,
         "stock": 10,
         "brand": "Danko Accesorios",
-        "description": "Pin E"
+        "description": "Pin E",
+        "thumbnail": "https://i.ibb.co/Svz95jz/danko-Con-Fondo.png"
     },
     {
         "id": 36,
-        "category": "imanes",
+        "category": "Imanes",
         "precio": 1000,
         "stock": 10,
         "brand": "Danko Accesorios",
-        "description": "Iman A"
+        "description": "Iman A",
+        "thumbnail": "https://i.ibb.co/Svz95jz/danko-Con-Fondo.png"
     },
     {
         "id": 37,
-        "category": "imanes",
+        "category": "Imanes",
         "precio": 1000,
         "stock": 10,
         "brand": "Danko Accesorios",
-        "description": "Iman B"
+        "description": "Iman B",
+        "thumbnail": "https://i.ibb.co/Svz95jz/danko-Con-Fondo.png"
     },
     {
         "id": 38,
-        "category": "imanes",
+        "category": "Imanes",
         "precio": 1000,
         "stock": 10,
         "brand": "Danko Accesorios",
-        "description": "Iman C"
+        "description": "Iman C",
+        "thumbnail": "https://i.ibb.co/Svz95jz/danko-Con-Fondo.png"
     },
     {
         "id": 39,
-        "category": "imanes",
+        "category": "Imanes",
         "precio": 1000,
         "stock": 10,
         "brand": "Danko Accesorios",
-        "description": "Iman D"
+        "description": "Iman D",
+        "thumbnail": "https://i.ibb.co/Svz95jz/danko-Con-Fondo.png"
     },
     {
         "id": 40,
-        "category": "imanes",
+        "category": "Imanes",
         "precio": 1000,
         "stock": 10,
         "brand": "Danko Accesorios",
-        "description": "Iman E"
+        "description": "Iman E",
+        "thumbnail": "https://i.ibb.co/Svz95jz/danko-Con-Fondo.png"
     },
     {
         "id": 41,
-        "category": "producto navideño",
+        "category": "Producto Navideño",
         "precio": 1000,
         "stock": 10,
         "brand": "Danko Accesorios",
-        "description": "Producto Navideño A"
+        "description": "Producto Navideño A",
+        "thumbnail": "https://i.ibb.co/QNT9741/navidad1.jpg"
     },
     {
         "id": 42,
-        "category": "producto navideño",
+        "category": "Producto Navideño",
         "precio": 1000,
         "stock": 10,
         "brand": "Danko Accesorios",
-        "description": "Producto Navideño B"
+        "description": "Producto Navideño B",
+        "thumbnail": "https://i.ibb.co/gD3Y5tx/navidad2.jpg"
     },
     {
         "id": 43,
-        "category": "producto navideño",
+        "category": "Producto Navideño",
         "precio": 1000,
         "stock": 10,
         "brand": "Danko Accesorios",
-        "description": "Producto Navideño C"
+        "description": "Producto Navideño C",
+        "thumbnail": "https://i.ibb.co/8Pg8c3d/navidad3.jpg"
     },
     {
         "id": 44,
-        "category": "producto navideño",
+        "category": "Producto Navideño",
         "precio": 1000,
         "stock": 10,
         "brand": "Danko Accesorios",
-        "description": "Producto Navideño D"
+        "description": "Producto Navideño D",
+        "thumbnail": "https://i.ibb.co/Svz95jz/danko-Con-Fondo.png"
     },
     {
         "id": 45,
-        "category": "producto navideño",
+        "category": "Producto Navideño",
         "precio": 1000,
         "stock": 10,
         "brand": "Danko Accesorios",
-        "description": "Producto Navideño E"
+        "description": "Producto Navideño E",
+        "thumbnail": "https://i.ibb.co/Svz95jz/danko-Con-Fondo.png"
     }
 ]

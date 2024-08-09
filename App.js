@@ -2,59 +2,64 @@ import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, View } from 'react-native';
 import * as Font from 'expo-font';
 import React, { useState, useEffect } from 'react';
-import TitleHome from './src/components/TitleHome';
-import SubtitleHome from './src/components/SubtitleHome';
-import ProductsList from './src/components/ProductsList';
-import Header from './src/components/Header';
 import ItemListCategories from './src/screens/ItemListCategories';
 import Home from './src/screens/Home';
+import Search from './src/components/Search';
 
 const App = () => {
   const [fontLoaded, setFontLoaded] = useState(false);
+  const [categorySelected, setCategorySelected] = useState("");
 
   useEffect(() => {
     async function loadFont() {
-      await Font.loadAsync({
-        'Edu': require('./assets/fonts/EduAUVICWANTHand-VariableFont_wght.ttf'),
-      });
-      setFontLoaded(true);
+      try {
+        await Font.loadAsync({
+          'Edu': require('./assets/fonts/EduAUVICWANTHand-VariableFont_wght.ttf'),
+        });
+        setFontLoaded(true);
+      } catch (error) {
+        console.error('Error loading font', error);
+        setFontLoaded(false);
+      }
     }
     loadFont();
-  }, []);
+  }, []); // La lista de dependencias está vacía, así que el efecto solo se ejecuta una vez
 
   if (!fontLoaded) {
-    return null; // Muestra una pantalla de carga si la fuente no está cargada
+    return (
+      <View style={styles.container}>
+        <Text>Cargando...</Text>
+      </View>
+    );
   }
 
-  return (
-    <View style={styles.container}>
-      <Home/>
-      <Header />
-      <Text style={styles.titulo}>Accesorios</Text>
-      
-      {/*<TitleHome />
-      <SubtitleHome />
-      <ProductsList/>*/}
+    const handleCategorySelected = (category) => {
+      setCategorySelected(category);
+    };
 
+
+  return (
+    <>
+    <View style={styles.container}>
+      <View>
+      {categorySelected ? (
+        <ItemListCategories category={categorySelected} />
+      ) : (
+        <Home handleCategorySelected={handleCategorySelected} />
+      )}
+      </View>
       <StatusBar style="auto" />
     </View>
+    </>
   );
-};
+}
 
 const styles = StyleSheet.create({
   container: {
-    flex: 1, // Asegura que el contenedor ocupe todo el espacio disponible
+    flex: 1,
     backgroundColor: 'darksalmon',
     alignItems: 'center',
-    paddingTop: 50,
-  },
-  titulo: {
-    color: '#fff',
-    fontWeight: 'bold',
-    fontSize: 16, // Ajuste el tamaño de la fuente para mejor visibilidad
-    marginTop: -50, // Ajustado para evitar superposición
-    fontFamily: "Edu",
-    marginLeft: 45,
+    paddingTop: 40,
   },
 });
 

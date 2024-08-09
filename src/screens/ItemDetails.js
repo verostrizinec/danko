@@ -10,7 +10,8 @@ const ItemDetail = ({id}) => {
     <>
       <Header title="Detalle"/>
       <View>
-        <Text>{products[id].title}</Text>
+        <Text>{products[id].description}</Text>
+        <Text>{products[id].precio}</Text>
       </View>
     </>
   )

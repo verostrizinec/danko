@@ -4,15 +4,15 @@ import Category from './Category'
 import { colors } from '../global/colors'
 
 
-const Categories = () => {
+const Categories = ({handleCategorySelected}) => {
+  
   return (
-    <View style={styles.container}>
-        <FlatList
+    <View>
+      <FlatList
         data={categories}
         keyExtractor={item => item}
-        renderItem={({item}) => <Category item={item}/>}
+        renderItem={({item}) => <Category item={item} handleCategorySelected={handleCategorySelected}/>}
       />
-      
     </View>
   )
 }
