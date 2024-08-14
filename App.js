@@ -2,13 +2,11 @@ import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, View } from 'react-native';
 import * as Font from 'expo-font';
 import React, { useState, useEffect } from 'react';
-import ItemListCategories from './src/screens/ItemListCategories';
-import Home from './src/screens/Home';
-import Search from './src/components/Search';
+import Navigator from './src/navigation/Navigator';
+
 
 const App = () => {
   const [fontLoaded, setFontLoaded] = useState(false);
-  const [categorySelected, setCategorySelected] = useState("");
 
   useEffect(() => {
     async function loadFont() {
@@ -23,42 +21,20 @@ const App = () => {
       }
     }
     loadFont();
-  }, []); // La lista de dependencias está vacía, así que el efecto solo se ejecuta una vez
-
-  if (!fontLoaded) {
-    return (
-      <View style={styles.container}>
-        <Text>Cargando...</Text>
-      </View>
-    );
-  }
-
-    const handleCategorySelected = (category) => {
-      setCategorySelected(category);
-    };
-
+  }, []);
 
   return (
-    <>
     <View style={styles.container}>
-      <View>
-      {categorySelected ? (
-        <ItemListCategories category={categorySelected} />
-      ) : (
-        <Home handleCategorySelected={handleCategorySelected} />
-      )}
-      </View>
-      <StatusBar style="auto" />
-    </View>
-    </>
-  );
+    <Navigator />
+    <StatusBar style="auto" />
+  </View>
+);
 }
 
 const styles = StyleSheet.create({
   container: {
     flex: 1,
     backgroundColor: 'darksalmon',
-    alignItems: 'center',
     paddingTop: 40,
   },
 });

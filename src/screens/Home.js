@@ -1,16 +1,21 @@
-import { StyleSheet, Text, View } from 'react-native'
-import Header from '../components/Header'
+import { StyleSheet, View } from 'react-native'
+import React from 'react'
 import Categories from '../components/Categories'
 
-const Home = ({handleCategorySelected}) => {
+const Home = () => {
+
   return (
-    <>
-      <Header/>
-      <Categories handleCategorySelected={handleCategorySelected}/>
-    </>
+    <View style={styles.container}>
+      <Categories />
+    </View>
   )
 }
 
 export default Home
 
-const styles = StyleSheet.create({})
+const styles = StyleSheet.create({
+  container: {
+    flex: 1, // Ocupa todo el espacio disponible
+    backgroundColor: 'darksalmon', // Aplica el color de fondo también aquí
+  },
+});

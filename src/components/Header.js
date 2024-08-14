@@ -16,23 +16,22 @@ export default Header;
 
 const styles = StyleSheet.create({
   container: {
-    alignItems: 'center', // Centra el contenido horizontalmente
-    justifyContent: 'center', // Centra el contenido verticalmente
-    paddingVertical: 20, // Espacio adicional para el contenedor
-    backgroundColor: 'darksalmon', // Color de fondo (opcional)
-    width: '100%', // Asegura que el contenedor ocupe todo el ancho
-    marginLeft: 50,
-    marginBottom: -50,
+    alignItems: 'center', // Centra horizontalmente
+    justifyContent: 'center', // Centra verticalmente
+    paddingVertical: 20,
+    backgroundColor: 'darksalmon',
+    width: '100%',
   },
   logo: {
     width: 150,
     height: 150,
+    marginBottom: -30, // Ajuste para que el logo y el título se superpongan ligeramente
   },
   title: {
     color: '#fff',
     fontWeight: 'bold',
     fontSize: 16,
     fontFamily: "Edu",
-    marginTop: 10, // Espacio entre el logo y el título
+    marginTop: 10,
   },
 });

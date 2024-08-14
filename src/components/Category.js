@@ -1,14 +1,18 @@
 import { StyleSheet, Text, View, Pressable } from 'react-native'
 import ShadowWrapper from './ShadowWrapper'
 import { colors } from '../global/colors'
+import { useNavigation } from '@react-navigation/native'
 
-const Category = ({item,handleCategorySelected}) => {
+const Category = ({item}) => {
+
+  const navigation = useNavigation()
+
     return (
-      <Pressable onPress={()=>handleCategorySelected(item)}>
-            <ShadowWrapper style={styles.container}>
-              <Text style={styles.text}>{item}</Text>
-            </ShadowWrapper>
-      </Pressable>
+      <Pressable onPress={()=>navigation.navigate("Products",{category:item})}>
+          <ShadowWrapper style={styles.container}>
+            <Text style={styles.text}>{item}</Text>
+          </ShadowWrapper>
+    </Pressable>
   
     )
   }
