@@ -1,5 +1,4 @@
 import { StyleSheet, View } from 'react-native'
-import React from 'react'
 import Categories from '../components/Categories'
 
 const Home = () => {
@@ -19,3 +18,4 @@ const styles = StyleSheet.create({
     backgroundColor: 'darksalmon', // Aplica el color de fondo también aquí
   },
 });
+

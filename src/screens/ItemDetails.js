@@ -1,5 +1,4 @@
 import { Image, Pressable, StyleSheet, Text, View } from 'react-native'
-import React from 'react'
 import products from '../data/products.json'
 import { colors } from '../global/colors'
 
@@ -57,13 +56,16 @@ const styles = StyleSheet.create({
   },
   title: {
     fontSize: 20,
+    color: "white",
   },
   description: {
     fontSize: 18,
+    color: "white",
   },
   price: {
-    fontSize: 20,
+    fontSize: 18,
     fontWeight: 'bold',
+    color: "white",
   },
   image: {
     width: '100%',
