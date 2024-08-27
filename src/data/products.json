@@ -6,7 +6,7 @@
         "stock": 10,
         "brand": "Danko Accesorios",
         "description": "Aros Chocolate",
-        "thumbnail": "https://i.ibb.co/4Mqmp2D/aros-Choco.jpg"
+        "thumbnail": "https://i.ibb.co/f8CQ80v/aros-Choco-removebg-preview.png"
     },
     {
         "id": 1,
@@ -15,7 +15,7 @@
         "stock": 10,
         "brand": "Danko Accesorios",
         "description": "Aros Palta",
-        "thumbnail": "https://i.ibb.co/T4znqnh/aros-Palta.jpg"
+        "thumbnail": "https://i.ibb.co/vmTs4rq/aros-Palta-removebg-preview.png"
     },
     {
         "id": 2,
@@ -24,7 +24,7 @@
         "stock": 10,
         "brand": "Danko Accesorios",
         "description": "Aros Argentina",
-        "thumbnail": "https://i.ibb.co/xqdRX3Y/arosArg.jpg"
+        "thumbnail": "https://i.ibb.co/t3zc2y5/aros-Arg-removebg-preview.png"
     },
     {
         "id": 3,
@@ -33,7 +33,7 @@
         "stock": 10,
         "brand": "Danko Accesorios",
         "description": "Aros Pizza",
-        "thumbnail": "https://i.ibb.co/fH3zMpM/aros-Pizza.jpg"
+        "thumbnail": "https://i.ibb.co/GJbpHzt/aros-Pizza-removebg-preview.png"
     },
     {
         "id": 4,
@@ -42,7 +42,7 @@
         "stock": 10,
         "brand": "Danko Accesorios",
         "description": "Aros Boca Juniors",
-        "thumbnail": "https://i.ibb.co/RcGj7CW/arosBoca.jpg"
+        "thumbnail": "https://i.ibb.co/QFWJwkY/aros-Boca-removebg-preview.png"
     },
     {
         "id": 5,
@@ -51,16 +51,16 @@
         "stock": 10,
         "brand": "Danko Accesorios",
         "description": "Hebilla Tricolor",
-        "thumbnail": "https://i.ibb.co/gwyfMk7/hebillas.jpg"
+        "thumbnail": "https://i.ibb.co/0ZyWDzw/hebillas-removebg-preview.png"
     },
     {
         "id": 6,
-        "category": "hebillas",
+        "category": "Hebillas",
         "precio": 1000,
         "stock": 10,
         "brand": "Danko Accesorios",
         "description": "Hebilla Boca Juniors",
-        "thumbnail": "https://i.ibb.co/gwyfMk7/hebillas.jpg"
+        "thumbnail": "https://i.ibb.co/0ZyWDzw/hebillas-removebg-preview.png"
     },
     {
         "id": 7,
@@ -69,7 +69,7 @@
         "stock": 10,
         "brand": "Danko Accesorios",
         "description": "Hebillas Flores",
-        "thumbnail": "https://i.ibb.co/gwyfMk7/hebillas.jpg"
+        "thumbnail": "https://i.ibb.co/0ZyWDzw/hebillas-removebg-preview.png"
     },
     {
         "id": 8,
@@ -78,7 +78,7 @@
         "stock": 10,
         "brand": "Danko Accesorios",
         "description": "Escarapela Argentina Mate",
-        "thumbnail": "https://i.ibb.co/qkvhFFk/escarapela-Mate.jpg"
+        "thumbnail": "https://i.ibb.co/mtK2rzW/escarapela-Mate-removebg-preview.png"
     },
     {
         "id": 9,
@@ -87,7 +87,7 @@
         "stock": 10,
         "brand": "Danko Accesorios",
         "description": "Escarapela Argentina Pastelito",
-        "thumbnail": "https://i.ibb.co/dDXqbR4/escarapela-Pastel.jpg"
+        "thumbnail": "https://i.ibb.co/3TZTgMR/escarapela-Pastel-removebg-preview.png"
     },
     {
         "id": 10,
@@ -96,7 +96,7 @@
         "stock": 10,
         "brand": "Danko Accesorios",
         "description": "Escarapela Argentina Redonda",
-        "thumbnail": "https://i.ibb.co/SQ5f6TT/escarapela-Redonda.jpg"
+        "thumbnail": "https://i.ibb.co/txx1K2W/escarapela-Redonda-removebg-preview.png"
     },
     {
         "id": 11,
@@ -105,7 +105,7 @@
         "stock": 10,
         "brand": "Danko Accesorios",
         "description": "Anillo Blanco",
-        "thumbnail": "https://i.ibb.co/gzGvNPN/anillos.jpg"
+        "thumbnail": "https://i.ibb.co/TB05r5z/anillos-removebg-preview.png"
     },
     {
         "id": 12,
@@ -114,7 +114,7 @@
         "stock": 10,
         "brand": "Danko Accesorios",
         "description": "Anillo Negro",
-        "thumbnail": "https://i.ibb.co/gzGvNPN/anillos.jpg"
+        "thumbnail": "https://i.ibb.co/TB05r5z/anillos-removebg-preview.png"
     },
     {
         "id": 13,
@@ -123,7 +123,7 @@
         "stock": 10,
         "brand": "Danko Accesorios",
         "description": "Anillo Rojo",
-        "thumbnail": "https://i.ibb.co/gzGvNPN/anillos.jpg"
+        "thumbnail": "https://i.ibb.co/TB05r5z/anillos-removebg-preview.png"
     },
     {
         "id": 14,
@@ -132,16 +132,16 @@
         "stock": 10,
         "brand": "Danko Accesorios",
         "description": "Anillo Verde",
-        "thumbnail": "https://i.ibb.co/gzGvNPN/anillos.jpg"
+        "thumbnail": "https://i.ibb.co/TB05r5z/anillos-removebg-preview.png"
     },
     {
         "id": 15,
-        "category": "anillos",
+        "category": "Anillos",
         "precio": 1000,
         "stock": 10,
         "brand": "Danko Accesorios",
         "description": "Anillo Gris",
-        "thumbnail": "https://i.ibb.co/gzGvNPN/anillos.jpg"
+        "thumbnail": "https://i.ibb.co/TB05r5z/anillos-removebg-preview.png"
     },
     {
         "id": 16,
@@ -150,7 +150,7 @@
         "stock": 10,
         "brand": "Danko Accesorios",
         "description": "Prendedor A",
-        "thumbnail": "https://i.ibb.co/Svz95jz/danko-Con-Fondo.png"
+        "thumbnail": "https://i.ibb.co/S7NgYkJ/dan-Sin-Fondo.png"
     },
     {
         "id": 17,
@@ -159,7 +159,7 @@
         "stock": 10,
         "brand": "Danko Accesorios",
         "description": "Prendedor B",
-        "thumbnail": "https://i.ibb.co/Svz95jz/danko-Con-Fondo.png"
+        "thumbnail": "https://i.ibb.co/S7NgYkJ/dan-Sin-Fondo.png"
     },
     {
         "id": 18,
@@ -168,7 +168,7 @@
         "stock": 10,
         "brand": "Danko Accesorios",
         "description": "Prendedor C",
-        "thumbnail": "https://i.ibb.co/Svz95jz/danko-Con-Fondo.png"
+        "thumbnail": "https://i.ibb.co/S7NgYkJ/dan-Sin-Fondo.png"
     },
     {
         "id": 19,
@@ -177,7 +177,7 @@
         "stock": 10,
         "brand": "Danko Accesorios",
         "description": "Prendedor D",
-        "thumbnail": "https://i.ibb.co/Svz95jz/danko-Con-Fondo.png"
+        "thumbnail": "https://i.ibb.co/S7NgYkJ/dan-Sin-Fondo.png"
     },
     {
         "id": 20,
@@ -186,7 +186,7 @@
         "stock": 10,
         "brand": "Danko Accesorios",
         "description": "Prendedor E",
-        "thumbnail": "https://i.ibb.co/Svz95jz/danko-Con-Fondo.png"
+        "thumbnail": "https://i.ibb.co/S7NgYkJ/dan-Sin-Fondo.png"
     },
     {
         "id": 21,
@@ -195,7 +195,7 @@
         "stock": 10,
         "brand": "Danko Accesorios",
         "description": "Porta sahumerio A",
-        "thumbnail": "https://i.ibb.co/Svz95jz/danko-Con-Fondo.png"
+        "thumbnail": "https://i.ibb.co/52KVTZN/sahumerio.png"
 
     },
     {
@@ -205,7 +205,7 @@
         "stock": 10,
         "brand": "Danko Accesorios",
         "description": "Porta sahumerio B",
-        "thumbnail": "https://i.ibb.co/Svz95jz/danko-Con-Fondo.png"
+        "thumbnail": "https://i.ibb.co/52KVTZN/sahumerio.png"
     },
     {
         "id": 23,
@@ -214,7 +214,7 @@
         "stock": 10,
         "brand": "Danko Accesorios",
         "description": "Porta sahumerio C",
-        "thumbnail": "https://i.ibb.co/Svz95jz/danko-Con-Fondo.png"
+        "thumbnail": "https://i.ibb.co/52KVTZN/sahumerio.png"
     },
     {
         "id": 24,
@@ -223,7 +223,7 @@
         "stock": 10,
         "brand": "Danko Accesorios",
         "description": "Porta sahumerio D",
-        "thumbnail": "https://i.ibb.co/Svz95jz/danko-Con-Fondo.png"
+        "thumbnail": "https://i.ibb.co/52KVTZN/sahumerio.png"
     },
     {
         "id": 25,
@@ -232,7 +232,7 @@
         "stock": 10,
         "brand": "Danko Accesorios",
         "description": "Porta sahumerio E",
-        "thumbnail": "https://i.ibb.co/Svz95jz/danko-Con-Fondo.png"
+        "thumbnail": "https://i.ibb.co/52KVTZN/sahumerio.png"
     },
     {
         "id": 26,
@@ -241,7 +241,7 @@
         "stock": 10,
         "brand": "Danko Accesorios",
         "description": "Llavero A",
-        "thumbnail": "https://i.ibb.co/KDgdcpf/llaveros.jpg"
+        "thumbnail": "https://i.ibb.co/vxbKvf7/llaveros-removebg-preview.png"
     },
     {
         "id": 27,
@@ -250,7 +250,7 @@
         "stock": 10,
         "brand": "Danko Accesorios",
         "description": "Llavero B",
-        "thumbnail": "https://i.ibb.co/KDgdcpf/llaveros.jpg"
+        "thumbnail": "https://i.ibb.co/vxbKvf7/llaveros-removebg-preview.png"
     },
     {
         "id": 28,
@@ -259,7 +259,7 @@
         "stock": 10,
         "brand": "Danko Accesorios",
         "description": "Llavero C",
-        "thumbnail": "https://i.ibb.co/KDgdcpf/llaveros.jpg"
+        "thumbnail": "https://i.ibb.co/vxbKvf7/llaveros-removebg-preview.png"
     },
     {
         "id": 29,
@@ -268,7 +268,7 @@
         "stock": 10,
         "brand": "Danko Accesorios",
         "description": "Llavero D",
-        "thumbnail": "https://i.ibb.co/KDgdcpf/llaveros.jpg"
+        "thumbnail": "https://i.ibb.co/vxbKvf7/llaveros-removebg-preview.png"
     },
     {
         "id": 30,
@@ -277,7 +277,7 @@
         "stock": 10,
         "brand": "Danko Accesorios",
         "description": "Llavero E",
-        "thumbnail": "https://i.ibb.co/KDgdcpf/llaveros.jpg"
+        "thumbnail": "https://i.ibb.co/vxbKvf7/llaveros-removebg-preview.png"
     },
     {
         "id": 31,
@@ -286,16 +286,16 @@
         "stock": 10,
         "brand": "Danko Accesorios",
         "description": "Pin A",
-        "thumbnail": "https://i.ibb.co/Svz95jz/danko-Con-Fondo.png"
+        "thumbnail": "https://i.ibb.co/S7NgYkJ/dan-Sin-Fondo.png"
     },
     {
         "id": 32,
-        "category": "pines",
+        "category": "Pines",
         "precio": 1000,
         "stock": 10,
         "brand": "Danko Accesorios",
         "description": "Pin B",
-        "thumbnail": "https://i.ibb.co/Svz95jz/danko-Con-Fondo.png"
+        "thumbnail": "https://i.ibb.co/S7NgYkJ/dan-Sin-Fondo.png"
     },
     {
         "id": 33,
@@ -304,7 +304,7 @@
         "stock": 10,
         "brand": "Danko Accesorios",
         "description": "Pin C",
-        "thumbnail": "https://i.ibb.co/Svz95jz/danko-Con-Fondo.png"
+        "thumbnail": "https://i.ibb.co/S7NgYkJ/dan-Sin-Fondo.png"
     },
     {
         "id": 34,
@@ -313,7 +313,7 @@
         "stock": 10,
         "brand": "Danko Accesorios",
         "description": "Pin D",
-        "thumbnail": "https://i.ibb.co/Svz95jz/danko-Con-Fondo.png"
+        "thumbnail": "https://i.ibb.co/S7NgYkJ/dan-Sin-Fondo.png"
     },
     {
         "id": 35,
@@ -322,7 +322,7 @@
         "stock": 10,
         "brand": "Danko Accesorios",
         "description": "Pin E",
-        "thumbnail": "https://i.ibb.co/Svz95jz/danko-Con-Fondo.png"
+        "thumbnail": "https://i.ibb.co/S7NgYkJ/dan-Sin-Fondo.png"
     },
     {
         "id": 36,
@@ -331,7 +331,7 @@
         "stock": 10,
         "brand": "Danko Accesorios",
         "description": "Iman A",
-        "thumbnail": "https://i.ibb.co/Svz95jz/danko-Con-Fondo.png"
+        "thumbnail": "https://i.ibb.co/S7NgYkJ/dan-Sin-Fondo.png"
     },
     {
         "id": 37,
@@ -340,7 +340,7 @@
         "stock": 10,
         "brand": "Danko Accesorios",
         "description": "Iman B",
-        "thumbnail": "https://i.ibb.co/Svz95jz/danko-Con-Fondo.png"
+        "thumbnail": "https://i.ibb.co/S7NgYkJ/dan-Sin-Fondo.png"
     },
     {
         "id": 38,
@@ -349,7 +349,7 @@
         "stock": 10,
         "brand": "Danko Accesorios",
         "description": "Iman C",
-        "thumbnail": "https://i.ibb.co/Svz95jz/danko-Con-Fondo.png"
+        "thumbnail": "https://i.ibb.co/S7NgYkJ/dan-Sin-Fondo.png"
     },
     {
         "id": 39,
@@ -358,7 +358,7 @@
         "stock": 10,
         "brand": "Danko Accesorios",
         "description": "Iman D",
-        "thumbnail": "https://i.ibb.co/Svz95jz/danko-Con-Fondo.png"
+        "thumbnail": "https://i.ibb.co/S7NgYkJ/dan-Sin-Fondo.png"
     },
     {
         "id": 40,
@@ -367,7 +367,7 @@
         "stock": 10,
         "brand": "Danko Accesorios",
         "description": "Iman E",
-        "thumbnail": "https://i.ibb.co/Svz95jz/danko-Con-Fondo.png"
+        "thumbnail": "https://i.ibb.co/S7NgYkJ/dan-Sin-Fondo.png"
     },
     {
         "id": 41,
@@ -376,7 +376,7 @@
         "stock": 10,
         "brand": "Danko Accesorios",
         "description": "Producto Navideño A",
-        "thumbnail": "https://i.ibb.co/QNT9741/navidad1.jpg"
+        "thumbnail": "https://i.ibb.co/ryyqZFZ/navidad1-removebg-preview.png"
     },
     {
         "id": 42,
@@ -385,7 +385,7 @@
         "stock": 10,
         "brand": "Danko Accesorios",
         "description": "Producto Navideño B",
-        "thumbnail": "https://i.ibb.co/gD3Y5tx/navidad2.jpg"
+        "thumbnail": "https://i.ibb.co/ryyqZFZ/navidad1-removebg-preview.png"
     },
     {
         "id": 43,
@@ -394,7 +394,7 @@
         "stock": 10,
         "brand": "Danko Accesorios",
         "description": "Producto Navideño C",
-        "thumbnail": "https://i.ibb.co/8Pg8c3d/navidad3.jpg"
+        "thumbnail": "https://i.ibb.co/ccmc18x/navidad2-removebg-preview.png"
     },
     {
         "id": 44,
@@ -403,7 +403,7 @@
         "stock": 10,
         "brand": "Danko Accesorios",
         "description": "Producto Navideño D",
-        "thumbnail": "https://i.ibb.co/Svz95jz/danko-Con-Fondo.png"
+        "thumbnail": "https://i.ibb.co/3T6YVk9/navidad3-removebg-preview.png"
     },
     {
         "id": 45,
@@ -412,6 +412,6 @@
         "stock": 10,
         "brand": "Danko Accesorios",
         "description": "Producto Navideño E",
-        "thumbnail": "https://i.ibb.co/Svz95jz/danko-Con-Fondo.png"
+        "thumbnail": "https://i.ibb.co/3T6YVk9/navidad3-removebg-preview.png"
     }
 ]

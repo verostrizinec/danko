@@ -1,9 +1,9 @@
-import { StyleSheet, Text, View } from 'react-native'
+import { Pressable, StyleSheet, Text, View } from 'react-native'
 import Entypo from '@expo/vector-icons/Entypo'
 import { colors } from '../global/colors'
 
 
-const CartItem = ({item}) => {
+const CartItem = ({item, onDelete}) => {
     
     return (
       <View style={styles.container}>
@@ -12,7 +12,9 @@ const CartItem = ({item}) => {
           <Text style={styles.category}>{item.category}</Text>
           <Text style={styles.precio}>$ {item.precio}</Text>
         </View>
+        <Pressable onPress={() => onDelete(item.id)}>
         <Entypo name="trash" size={24} color="white" />
+        </Pressable>
       </View>
     );
   };

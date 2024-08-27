@@ -7,7 +7,7 @@
         "quantity": 2,
         "brand": "Danko Accesorios",
         "description": "Aros Chocolate",
-        "thumbnail": "https://i.ibb.co/4Mqmp2D/aros-Choco.jpg"
+        "thumbnail": "https://i.ibb.co/f8CQ80v/aros-Choco-removebg-preview.png"
     },
     {
         "id": 1,
@@ -17,7 +17,7 @@
         "quantity": 2,
         "brand": "Danko Accesorios",
         "description": "Aros Palta",
-        "thumbnail": "https://i.ibb.co/T4znqnh/aros-Palta.jpg"
+        "thumbnail": "https://i.ibb.co/vmTs4rq/aros-Palta-removebg-preview.png"
     },
     {
         "id": 2,
@@ -27,6 +27,6 @@
         "quantity": 2,
         "brand": "Danko Accesorios",
         "description": "Aros Argentina",
-        "thumbnail": "https://i.ibb.co/xqdRX3Y/arosArg.jpg"
+        "thumbnail": "https://i.ibb.co/t3zc2y5/aros-Arg-removebg-preview.png"
     }
 ]

@@ -1,20 +1,21 @@
 import { StyleSheet, Text, View, FlatList } from 'react-native'
-import categories from '../data/categories.json'
 import Category from './Category'
 import { colors } from '../global/colors'
+import { useGetCategoriesQuery } from '../services/shop'
 
 
 const Categories = () => {
+  const {data:categories} = useGetCategoriesQuery() //asi recibo las categorias de firebase
   
-  return (
-    <View>
+return (
+    <View> 
       <FlatList
-        data={categories}
-        keyExtractor={item => item}
-        renderItem={({item}) => <Category item={item}/>}
+        data={categories} 
+        keyExtractor={item => item} 
+        renderItem={({item}) => <Category item={item}/>} 
       />
     </View>
-  )
+  );
 }
 
 export default Categories

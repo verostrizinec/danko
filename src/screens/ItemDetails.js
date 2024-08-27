@@ -1,20 +1,18 @@
 import { Image, Pressable, StyleSheet, Text, View } from 'react-native'
 import products from '../data/products.json'
 import { colors } from '../global/colors'
+import { addItemCart } from '../features/cart/cartSlice'
+import { useDispatch } from 'react-redux'
+import { useNavigation } from '@react-navigation/native'
 
 const ItemDetail = ({ route }) => {
   const { id } = route.params
+  const navigation = useNavigation()
+  const dispatch = useDispatch()
 
-  // Buscar el producto con el id que viene en los parámetros
-  const product = products.find(product => product.id === id)
-
-  // Si el producto no se encuentra, puedes mostrar un mensaje de error
-  if (!product) {
-    return (
-      <View style={styles.container}>
-        <Text>Producto no encontrado</Text>
-      </View>
-    )
+  const handleAddItemCart = () => {
+    dispatch(addItemCart({...products[id],quantity:1}))
+    navigation.navigate("CartStack")
   }
 
   return (
@@ -23,14 +21,14 @@ const ItemDetail = ({ route }) => {
         <Image
           style={styles.image}
           resizeMode='contain'
-          source={{ uri: product.thumbnail }}
+          source={{ uri: products[id].thumbnail }}
         />
         <View style={styles.containerText}>
-          <Text style={styles.title}>{product.title}</Text>
-          <Text style={styles.description}>{product.description}</Text>
-          <Text style={styles.price}>Precio: $ {product.precio}</Text>
+          <Text style={styles.title}>{products[id].title}</Text>
+          <Text style={styles.description}>{products[id].description}</Text>
+          <Text style={styles.price}>Precio: $ {products[id].precio}</Text>
         </View>
-        <Pressable style={styles.button}>
+        <Pressable style={styles.button} onPress={handleAddItemCart}>
           <Text style={styles.buttonText}>Comprar</Text>
         </Pressable>
       </View>

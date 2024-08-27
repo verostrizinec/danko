@@ -1,0 +1,1 @@
+export const URL_FIREBASE = "https://danko-7d233-default-rtdb.firebaseio.com/"
