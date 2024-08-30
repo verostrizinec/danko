@@ -1,18 +1,23 @@
-import { Image, Pressable, StyleSheet, Text, View } from 'react-native'
-import products from '../data/products.json'
+import { Image, Pressable, StyleSheet, Text, View, ActivityIndicator } from 'react-native'
 import { colors } from '../global/colors'
 import { addItemCart } from '../features/cart/cartSlice'
 import { useDispatch } from 'react-redux'
 import { useNavigation } from '@react-navigation/native'
+import { useGetProductQuery } from '../services/shop'
 
 const ItemDetail = ({ route }) => {
   const { id } = route.params
+  const {data:product,isLoading} = useGetProductQuery(id)
   const navigation = useNavigation()
   const dispatch = useDispatch()
 
   const handleAddItemCart = () => {
-    dispatch(addItemCart({...products[id],quantity:1}))
+    dispatch(addItemCart({...product,quantity:1}))
     navigation.navigate("CartStack")
+  }
+
+  if (isLoading) {
+    return <ActivityIndicator style={styles.spin} size="large" />;
   }
 
   return (
@@ -21,12 +26,12 @@ const ItemDetail = ({ route }) => {
         <Image
           style={styles.image}
           resizeMode='contain'
-          source={{ uri: products[id].thumbnail }}
+          source={{ uri: product.thumbnail }}
         />
         <View style={styles.containerText}>
-          <Text style={styles.title}>{products[id].title}</Text>
-          <Text style={styles.description}>{products[id].description}</Text>
-          <Text style={styles.price}>Precio: $ {products[id].precio}</Text>
+          <Text style={styles.title}>{product.title}</Text>
+          <Text style={styles.description}>{product.description}</Text>
+          <Text style={styles.price}>Precio: $ {product.precio}</Text>
         </View>
         <Pressable style={styles.button} onPress={handleAddItemCart}>
           <Text style={styles.buttonText}>Comprar</Text>
@@ -92,4 +97,12 @@ const styles = StyleSheet.create({
   buttonText: {
     color: 'white',
   },
+  spin: {
+    flex: 1,
+    justifyContent: 'center',
+    flexDirection: 'row',
+    padding: 10,
+    backgroundColor: colors.background,
+    color: "white"
+  }
 })

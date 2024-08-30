@@ -2,9 +2,10 @@ import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, View } from 'react-native'; 
 import * as Font from 'expo-font'; 
 import React, { useState, useEffect } from 'react';
-import Navigator from './src/navigation/Navigator'; 
+import MainNavigator from './src/navigation/MainNavigator'
 import { store } from './src/app/store'
 import { Provider } from 'react-redux'
+
 
 const App = () => {
   const [fontLoaded, setFontLoaded] = useState(false); // Declara un estado llamado fontLoaded con el valor inicial false.
@@ -27,8 +28,8 @@ const App = () => {
   return (
     <View style={styles.container}> 
     <Provider store={store}>
-      <Navigator /> 
-    </Provider>
+        <MainNavigator/>
+      </Provider>
       <StatusBar style="auto" />
     </View>
   );

@@ -7,7 +7,7 @@ const OrderItem = ({item}) => {
     <View style={styles.containerPrincipal}>
       <View style={styles.container}>
         <View style={styles.containerText}>
-          <Text style={styles.date}>{new Date(item.createdAt).toLocaleString()}</Text>
+        <Text style={styles.date}>{item.createAdt}</Text>
           <Text style={styles.total}>Total: $ {item.total}</Text>
        </View>
         <AntDesign name="search1" size={24} color="white" />
