@@ -1,6 +1,9 @@
-import {object,string} from 'yup'
+import {object,ref,string} from 'yup'
 
-export const loginSchema = object({
+export const registerSchema = object({
+    confirmPassword:string()
+        .required("Es requerido")
+        .oneOf([ref("password"),null],"Las contraseñas no coinciden"),
     password:string()
             .required("Password requerido")
             .min(8,"La contraseña debe tener mínimo 8 caracteres")

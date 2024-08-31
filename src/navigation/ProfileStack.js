@@ -1,26 +1,26 @@
-import { StyleSheet } from 'react-native'
-import { NavigationContainer } from '@react-navigation/native'
-import AuthStack from './AuthStack'
-import TabNavigator from './TabNavigator'
-import { useState } from 'react'
-import { useSelector } from 'react-redux'
+import { createNativeStackNavigator } from '@react-navigation/native-stack'
+import Header from '../components/Header'
+import Cart from '../screens/Cart'
+import ImageSelector from '../screens/ImageSelector'
+import MyProfile from '../screens/MyProfile'
 
+const Stack = createNativeStackNavigator()
 
-
-const MainNavigator = () => {
-
-    const idToken = useSelector(state => state.auth.idToken)
-
+const ProfileStack = () => {
   return (
-   <NavigationContainer>
-    {idToken ? <TabNavigator/>  : <AuthStack/> }
-    
-    </NavigationContainer>
+    <Stack.Navigator
+            screenOptions={(
+                () => {
+                    return {
+                        header: () => <Header title="Perfil"/>
+                    }
+                }
+            )}
+        >
+            <Stack.Screen name='MyProfile' component={MyProfile}/>
+            <Stack.Screen name='ImageSelector' component={ImageSelector}/>
+        </Stack.Navigator>
   )
 }
 
-export default MainNavigator
-
-const styles = StyleSheet.create({
-  
-  })
+export default ProfileStack

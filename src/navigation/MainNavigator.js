@@ -20,9 +20,4 @@ const MainNavigator = () => {
 export default MainNavigator
 
 const styles = StyleSheet.create({
-   tabBar:{
-    backgroundColor:colors.background,
-    height:80,
-    paddingTop: 15,
-   }
   })

@@ -6,6 +6,7 @@ import SubmitButton from '../components/SubmitButton'
 import { useLoginMutation } from '../services/auth'
 import { setUser } from '../features/auth/authSlice'
 import { useDispatch } from 'react-redux'
+import { loginSchema } from '../validations/loginSchema'
 
 const Login = ({navigation}) => {
 
@@ -21,8 +22,27 @@ const Login = ({navigation}) => {
     },[isSuccess])
 
     const onSubmit = async () => {
-        const {data} = await triggerLogin({email,password})
-        dispatch(setUser({email:data.email,idToken:data.idToken}))
+        try {
+          loginSchema.validateSync({email,password})
+          const {data} = await triggerLogin({email,password})
+          dispatch(setUser({
+            email:data.email,
+            idToken:data.idToken,
+            localId:data.localId}))
+        } catch (error) {
+          switch (error.path) {
+            case "email":
+              setErrorEmail(error.message)  
+              setErrorPassword("")            
+              break;
+              case "password": 
+              setErrorPassword(error.message)
+              setErrorEmail("")
+              break;
+              default:
+                break
+          }
+        }
     }
 
   return (
@@ -42,10 +62,10 @@ const Login = ({navigation}) => {
                 isSecure={true}
                 error={errorPassword}
             />
-            <SubmitButton onPress={onSubmit} title="Iniciar Sesion"/>
-            <Text style={styles.sub}>No tenes una cuenta?</Text>
+            <SubmitButton onPress={onSubmit} title="Iniciar Sesión"/>
+            <Text style={styles.sub}>¿No tenes una cuenta?</Text>
             <Pressable onPress={()=> navigation.navigate("Register")} >
-                <Text style={styles.subLink}>Registro</Text>
+                <Text style={styles.subLink}>Registrarme</Text>
             </Pressable>
         </View>
     </View>
@@ -76,11 +96,24 @@ const styles = StyleSheet.create({
       },
       sub:{
         fontSize:14,
-        fontFamily:"Josefin"
+        fontFamily:"Josefin",
       },
       subLink:{
         fontSize:14,
         fontFamily:"Josefin",
-        color:"blue"
+        color:"white",
+        width:"50%",
+        backgroundColor:colors.background,
+        padding:10,
+        borderRadius:15,
+        shadowColor: "#000",
+        shadowOffset: {
+          width: 0,
+          height: 1,
+        },
+        shadowOpacity: 0.22,
+        shadowRadius: 2.22,
+        elevation: 3,
+        margin: 20,
       }
 })

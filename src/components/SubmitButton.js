@@ -15,11 +15,20 @@ export default SubmitButton
 
 const styles = StyleSheet.create({
     button:{
-        width:"60%",
+        width:"50%",
         backgroundColor:colors.background,
         padding:10,
         alignItems:"center",
-        borderRadius:10
+        borderRadius:10,
+        shadowColor: "#000",
+        shadowOffset: {
+          width: 0,
+          height: 1,
+        },
+        shadowOpacity: 0.22,
+        shadowRadius: 2.22,
+        elevation: 3,
+        margin: 20,
     },
     text:{
         textAlign:"center",

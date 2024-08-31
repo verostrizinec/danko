@@ -1,8 +1,9 @@
-import { StyleSheet, Text, View } from 'react-native'
+import { StyleSheet, Text, View, Pressable } from 'react-native'
 import AntDesign from '@expo/vector-icons/AntDesign';
 import { colors } from '../global/colors';
+import Entypo from '@expo/vector-icons/Entypo'
 
-const OrderItem = ({item}) => {
+const OrderItem = ({item, onDelete}) => {
   return (
     <View style={styles.containerPrincipal}>
       <View style={styles.container}>
@@ -10,7 +11,10 @@ const OrderItem = ({item}) => {
         <Text style={styles.date}>{item.createAdt}</Text>
           <Text style={styles.total}>Total: $ {item.total}</Text>
        </View>
-        <AntDesign name="search1" size={24} color="white" />
+       <Pressable onPress={() => onDelete(item.id)}>
+         <Entypo name="trash" size={24} color="white" />
+       </Pressable>
+
       </View>
     </View>
   )

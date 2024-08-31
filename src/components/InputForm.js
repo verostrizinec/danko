@@ -24,13 +24,14 @@ const styles = StyleSheet.create({
     input:{
         width:"90%",
         borderWidth:0,
-        borderBottomWidth:3,
-        borderBottomColor:"white",
+        borderBottomWidth:1,
+        borderBottomColor: "white",
         padding:2,
         fontFamily:"Josefin",
         fontSize:14,
         marginHorizontal:"5%",
-        marginVertical:10
+        marginVertical:10,
+
       },
       titleInput:{
         width:"90%",

@@ -13,7 +13,7 @@ const CartItem = ({item, onDelete}) => {
           <Text style={styles.precio}>$ {item.precio}</Text>
         </View>
         <Pressable onPress={() => onDelete(item.id)}>
-        <Entypo name="trash" size={24} color="white" />
+          <Entypo name="trash" size={24} color="white" />
         </Pressable>
       </View>
     );

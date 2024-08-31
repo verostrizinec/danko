@@ -12,7 +12,7 @@ const AuthStack = () => {
     screenOptions={(
         ({route}) => {
             return {
-                header: () => <Header title={route.name === "Login" ? "Inicio de Sesion":"Registrarme"}/>
+                header: () => <Header title={route.name === "Login" ? "Inicio de Sesión":"Registrarme"}/>
             }
         }
 )}
