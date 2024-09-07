@@ -1,30 +1,29 @@
 import { StyleSheet, Text, View, Pressable } from 'react-native'
-import AntDesign from '@expo/vector-icons/AntDesign';
-import { colors } from '../global/colors';
 import Entypo from '@expo/vector-icons/Entypo'
+import { colors } from '../global/colors'
 
-const OrderItem = ({item, onDelete}) => {
+const OrderItem = ({ item, onDelete }) => {
   return (
     <View style={styles.containerPrincipal}>
       <View style={styles.container}>
         <View style={styles.containerText}>
-        <Text style={styles.date}>{item.createAdt}</Text>
+          <Text style={styles.date}>{item.createAdt}</Text>
           <Text style={styles.total}>Total: $ {item.total}</Text>
-       </View>
-       <Pressable onPress={() => onDelete(item.id)}>
-         <Entypo name="trash" size={24} color="white" />
-       </Pressable>
-
+        </View>
+        <Pressable onPress={() => onDelete(item.id)}>
+          <Entypo name="trash" size={24} color="white" />
+        </Pressable>
       </View>
     </View>
-  )
-}
+  );
+};
+
 
 export default OrderItem
 
 const styles = StyleSheet.create({
   containerPrincipal: {
-    flex: 1, // Ocupa todo el espacio disponible
+    flex: 1,
     backgroundColor: colors.background,
     paddingBottom: 10,
   },

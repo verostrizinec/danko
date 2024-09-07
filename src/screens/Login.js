@@ -7,6 +7,7 @@ import { useLoginMutation } from '../services/auth'
 import { setUser } from '../features/auth/authSlice'
 import { useDispatch } from 'react-redux'
 import { loginSchema } from '../validations/loginSchema'
+import { insertSession } from '../db'
 
 const Login = ({navigation}) => {
 
@@ -14,36 +15,36 @@ const Login = ({navigation}) => {
     const [password,setPassword] = useState("")
     const [errorEmail,setErrorEmail] = useState("")
     const [errorPassword,setErrorPassword] = useState("")
-    const [triggerLogin,{data,isSuccess}] = useLoginMutation()
+    const [triggerLogin,{data,isSuccess,isError,error}] = useLoginMutation()
     const dispatch = useDispatch()
 
-    useEffect(()=>{
-        if(isSuccess) console.log(data)
-    },[isSuccess])
-
     const onSubmit = async () => {
-        try {
-          loginSchema.validateSync({email,password})
-          const {data} = await triggerLogin({email,password})
-          dispatch(setUser({
-            email:data.email,
-            idToken:data.idToken,
-            localId:data.localId}))
-        } catch (error) {
-          switch (error.path) {
-            case "email":
-              setErrorEmail(error.message)  
-              setErrorPassword("")            
-              break;
-              case "password": 
-              setErrorPassword(error.message)
-              setErrorEmail("")
-              break;
-              default:
-                break
-          }
+      try {
+        loginSchema.validateSync({email,password})
+        const {data} = await triggerLogin({email,password})
+        insertSession(data)
+        dispatch(setUser({
+          email:data.email,
+          idToken:data.idToken,
+          localId:data.localId
+        }))
+      } catch (error) {
+        console.log(error)
+        switch(error.path){
+          case "email":
+            setErrorEmail(error.message)
+            setErrorPassword("")
+            break
+          case "password":
+            setErrorPassword(error.message)
+            setErrorEmail("")
+            break
+            default:
+              break
         }
-    }
+   
+      }
+  }
 
   return (
     <View style={styles.main}>

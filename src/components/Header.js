@@ -1,22 +1,28 @@
 import { StyleSheet, Text, View, Image, Pressable } from 'react-native';
-import Ionicons from '@expo/vector-icons/Ionicons';
-import { useNavigation, useRoute } from '@react-navigation/native';
+import MaterialIcons from '@expo/vector-icons/MaterialIcons';
+import { deleteSession } from '../db';
+import { useDispatch } from 'react-redux';
+import { clearUser } from '../features/auth/authSlice';
+import { useSelector } from 'react-redux';
 
 const Header = ({ title }) => {
-  const navigation = useNavigation();
-  const route = useRoute(); 
+  const dispatch = useDispatch()
+  const idToken = useSelector(state => state.auth.idToken)
+
+  const onLogout = () => {
+      deleteSession()
+      dispatch(clearUser())
+  }
 
   return (
     <View style={styles.container}>
-      {route.name !== "Home" && (
-        <Pressable style={styles.backButton} onPress={() => navigation.goBack()}>
-          <Ionicons name="arrow-back" size={24} color="white" />
-        </Pressable>
-      )}
       <Image
         source={require("../../assets/img/danSinFondo.png")}
         style={styles.logo}
       />
+      {idToken && <Pressable onPress={onLogout} style={styles.logout}>
+        <MaterialIcons name="logout" size={30} color="white" />
+      </Pressable>}
       <Text style={styles.title}>{title}</Text>
     </View>
   );
@@ -51,4 +57,10 @@ const styles = StyleSheet.create({
     fontSize: 16,
     fontFamily: 'Edu',
   },
+  logout: {
+    position: "absolute",
+    right: 30,
+    bottom: 80,
+
+  }
 });

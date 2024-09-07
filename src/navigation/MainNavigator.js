@@ -2,13 +2,24 @@ import { StyleSheet } from 'react-native'
 import { NavigationContainer } from '@react-navigation/native'
 import AuthStack from './AuthStack'
 import TabNavigator from './TabNavigator'
-import { useState } from 'react'
-import { useSelector } from 'react-redux'
+import { useEffect } from 'react'
+import { useDispatch, useSelector } from 'react-redux'
+import { fetchSession } from '../db'
 import { colors } from '../global/colors'
 
 const MainNavigator = () => {
 
     const idToken = useSelector(state => state.auth.idToken)
+    const dispatch = useDispatch()
+
+    useEffect(() =>{
+      (async () =>{
+        const sessions = await fetchSession()
+        if(sessions.row.length){
+        dispatch(setUser(sessions.rows._array[0]))
+      }
+      })()
+    },[])
 
   return (
    <NavigationContainer>

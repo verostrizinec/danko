@@ -5,9 +5,13 @@ import React, { useState, useEffect } from 'react';
 import MainNavigator from './src/navigation/MainNavigator'
 import { store } from './src/app/store'
 import { Provider } from 'react-redux'
+import { init } from './src/db'
 
 
 const App = () => {
+
+  init()
+
   const [fontLoaded, setFontLoaded] = useState(false); // Declara un estado llamado fontLoaded con el valor inicial false.
 
   useEffect(() => { 
