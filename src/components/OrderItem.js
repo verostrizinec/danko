@@ -1,6 +1,6 @@
-import { StyleSheet, Text, View, Pressable } from 'react-native'
-import Entypo from '@expo/vector-icons/Entypo'
-import { colors } from '../global/colors'
+import { StyleSheet, Text, View, Pressable } from 'react-native';
+import Entypo from '@expo/vector-icons/Entypo';
+import { colors } from '../global/colors';
 
 const OrderItem = ({ item, onDelete }) => {
   return (
@@ -18,8 +18,7 @@ const OrderItem = ({ item, onDelete }) => {
   );
 };
 
-
-export default OrderItem
+export default OrderItem;
 
 const styles = StyleSheet.create({
   containerPrincipal: {

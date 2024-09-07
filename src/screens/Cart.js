@@ -2,7 +2,7 @@ import { StyleSheet, Text, View, FlatList, Pressable } from "react-native";
 import CartItem from "../components/CartItem";
 import { colors } from "../global/colors";
 import { useSelector, useDispatch } from 'react-redux';
-import { clearCart } from '../features/cart/cartSlice';  // Asegúrate de importar la acción
+import { clearCart, removeItem } from '../features/cart/cartSlice';  // Asegúrate de importar la acción
 import { usePostOrderMutation } from "../services/shop";
 
 const Cart = ({navigation}) => {
@@ -11,19 +11,18 @@ const Cart = ({navigation}) => {
   const dispatch = useDispatch();
 
   const handleAddOrder = () => {
-    const createAdt = new Date().toLocaleString()
+    const createAdt = new Date().toLocaleString();
     const order = {
       ...cart,
       createAdt
-    }
-    triggerPostOrder({userId:"1",order})
-    dispatch(clearCart())
-    navigation.navigate("OrdersStack")
-
-  }
-
+    };
+    triggerPostOrder({userId:"1", order});
+    dispatch(clearCart());
+    navigation.navigate("OrdersStack");
+  };
 
   const handleDelete = (id) => {
+    dispatch(removeItem(id));
   };
 
   return (
@@ -36,7 +35,7 @@ const Cart = ({navigation}) => {
       <View style={styles.containerConfirm}>
         <Pressable onPress={handleAddOrder}>
           <Text style={styles.textConfirm}>Confirmar</Text>
-          </Pressable>
+        </Pressable>
         <Text style={styles.textConfirm}>Total: $ {cart.total}</Text>
       </View>
     </View>

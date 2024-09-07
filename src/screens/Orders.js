@@ -1,36 +1,53 @@
-import { StyleSheet, View, FlatList, Text } from 'react-native'
-import OrderItem from '../components/OrderItem'
-import { useGetOrdersByUserQuery, useDeleteOrderMutation } from '../services/shop'
+import { StyleSheet, View, FlatList, Text } from 'react-native';
+import OrderItem from '../components/OrderItem';
+import { useGetOrdersByUserQuery, useDeleteOrderMutation } from '../services/shop';
+import { colors } from '../global/colors';
 
 const Orders = () => {
-  const { data: orders, isSuccess, isError, error, isLoading } = useGetOrdersByUserQuery("1")
-  const [deleteOrder] = useDeleteOrderMutation() // Obtener el hook de eliminación
+  const { data: orders, isSuccess, isError, error, isLoading } = useGetOrdersByUserQuery("1");
+  const [deleteOrder] = useDeleteOrderMutation(); // Obtener el hook de eliminación
 
   const handleDelete = async (id) => {
     try {
       // Llamar a la mutación de eliminación
-      await deleteOrder({ userId: "1", orderId: id }).unwrap()
+      await deleteOrder({ userId: "1", orderId: id }).unwrap();
     } catch (err) {
-      console.error("Error deleting order:", err)
+      console.error("Error deleting order:", err);
     }
-  }
+  };
 
-  if (isLoading) return <Text>Loading...</Text>
-  if (isError) return <Text>Error: {error.message}</Text>
+  if (isLoading) return <Text style={styles.loading}>Loading...</Text>;
+  if (isError) return <Text style={styles.error}>Error: {error.message}</Text>;
 
   return (
-    <View>
+    <View style={styles.container}>
       {isSuccess && (
         <FlatList
           data={orders}
-          keyExtractor={(item) => item.id}
+          keyExtractor={(item) => item.id.toString()} // Asegúrate de que el id sea una cadena
           renderItem={({ item }) => <OrderItem item={item} onDelete={handleDelete} />}
         />
       )}
     </View>
-  )
-}
+  );
+};
 
-export default Orders
+const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+    backgroundColor: colors.background,
+    padding: 10,
+  },
+  loading: {
+    color: 'white',
+    textAlign: 'center',
+    marginTop: 20,
+  },
+  error: {
+    color: 'red',
+    textAlign: 'center',
+    marginTop: 20,
+  },
+});
 
-const styles = StyleSheet.create({})
+export default Orders;

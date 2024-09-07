@@ -3,13 +3,13 @@ import React, { useEffect, useState } from 'react';
 import SubmitButton from '../components/SubmitButton';
 import { colors } from '../global/colors';
 import { useSelector } from 'react-redux';
-import { useGetUserProfileQuery } from '../services/shop'; // Nueva consulta para obtener el perfil
+import { useGetUserProfileQuery } from '../services/shop'; 
 
 const MyProfile = ({ navigation }) => {
   const [image, setImage] = useState("");
   const localId = useSelector(state => state.auth.localId);
   
-  // Usamos la consulta de datos para obtener la imagen de perfil
+
   const { data, error, isLoading } = useGetUserProfileQuery(localId);
 
   useEffect(() => {

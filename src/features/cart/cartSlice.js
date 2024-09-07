@@ -19,13 +19,21 @@ export const cartSlice = createSlice({
       }
       state.total += precio * quantity;
     },
-    clearCart:(state) => {
-        state.items = [],
-        state.total = 0
-    }
+    removeItem: (state, action) => {
+      const idToRemove = action.payload;
+      const itemToRemove = state.items.find(item => item.id === idToRemove);
+      if (itemToRemove) {
+        state.items = state.items.filter(item => item.id !== idToRemove);
+        state.total -= itemToRemove.precio * itemToRemove.quantity;
+      }
+    },
+    clearCart: (state) => {
+      state.items = [];
+      state.total = 0;
+    },
   },
 });
 
-export const { addItemCart, clearCart } = cartSlice.actions;
+export const { addItemCart, removeItem, clearCart } = cartSlice.actions;
 
 export default cartSlice.reducer;
