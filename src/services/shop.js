@@ -44,7 +44,7 @@ export const shopApi = createApi({
         }),
         deleteOrder: builder.mutation({
             query: ({ userId, orderId }) => ({
-                url: `orders/${userId}/${orderId}.json`, // Agrega .json al final de la URL
+                url: `orders/${userId}/${orderId}.json`, 
                 method: 'DELETE',
             })
         }),
