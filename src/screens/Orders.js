@@ -5,11 +5,11 @@ import { colors } from '../global/colors';
 
 const Orders = () => {
   const { data: orders, isSuccess, isError, error, isLoading } = useGetOrdersByUserQuery("1");
-  const [deleteOrder] = useDeleteOrderMutation(); // Obtener el hook de eliminación
+  const [deleteOrder] = useDeleteOrderMutation(); 
 
   const handleDelete = async (id) => {
     try {
-      // Llamar a la mutación de eliminación
+
       await deleteOrder({ userId: "1", orderId: id }).unwrap();
     } catch (err) {
       console.error("Error deleting order:", err);
@@ -24,7 +24,7 @@ const Orders = () => {
       {isSuccess && (
         <FlatList
           data={orders}
-          keyExtractor={(item) => item.id.toString()} // Asegúrate de que el id sea una cadena
+          keyExtractor={(item) => item.id.toString()} 
           renderItem={({ item }) => <OrderItem item={item} onDelete={handleDelete} />}
         />
       )}
