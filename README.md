@@ -8,8 +8,8 @@
 - Acceso seguro: Para poder acceder a la pantalla de perfil y hacer compras en la app es necesario estar registrado.
 - Información del usuario: Muestra detalles del usuario, nombre y foto de perfil.
 
--![Inicio de Sesión](../danko/assets/img/dankoSesion.PNG)
--![Perfil](../danko/assets/img/dankoPerfil.PNG)
+-![Inicio de Sesión](/assets/img/dankoSesion.PNG)
+-![Perfil](/assets/img/dankoPerfil.PNG)
 
 
 ### Autenticación con Firebase
