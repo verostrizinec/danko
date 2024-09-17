@@ -15,8 +15,8 @@ const MainNavigator = () => {
     useEffect(() => {
       (async () => {
         const sessions = await fetchSession()
-        if(sessions.rows.length){  // Cambiado a sessions.rows.length
-          dispatch(setUser(sessions.rows._array[0]))
+        if(sessions){ 
+          dispatch(setUser(sessions))
         }
       })()
     }, [])

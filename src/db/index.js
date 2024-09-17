@@ -1,68 +1,50 @@
 import * as SQLite from 'expo-sqlite'
 
-const db = SQLite.openDatabase('sessions.db')
 
-export const init = () => {
-    const promise = new Promise((resolve, reject) => {
-        db.transaction(tx => {
-            tx.executeSql(
-                'CREATE TABLE IF NOT EXISTS sessionUser (localId TEXT PRIMARY KEY NOT NULL, email TEXT NOT NULL, idToken TEXT NOT NULL)',
-                [],
-                (__,result) => resolve(result),
-                (__,error) => reject(error),
-            )
-        })
-    })
-
-    return promise
+export const init = async () => {
+    try {
+        const db = await SQLite.openDatabaseAsync('session5.db')
+        const connected = await db.execAsync(`
+            PRAGMA journal_mode = WAL;
+            CREATE TABLE IF NOT EXISTS sessionUser (localId TEXT PRIMARY KEY NOT NULL,email TEXT NOT NULL,idToken TEXT NOT NULL);
+        `)
+        return connected
+    } catch (error) {
+        return error
+    }
 }
 
-export const insertSession = ({localId, email, idToken}) => {
-    const promise = new Promise((resolve, reject) => {
-        db.transaction(tx => {
-            tx.executeSql(
-                'INSERT INTO sessionUser (localId,email,idToken) VALUES (?,?,?)',
-                [localId,email,idToken],
-                (__,result) => resolve(result),
-                (__,error) => reject(error),
-            )
-        })
-    })
-
-    return promise
-
-}
-
-export const fetchSession = ({localId, email, idToken}) => {
-    const promise = new Promise((resolve, reject) => {
-        db.transaction(tx => {
-            tx.executeSql(
-                'SELECT * FROM sessionUser',
-                [],
-                (__,result) => resolve(result),
-                (__,error) => reject(error),
-            )
-        })
-    })
-
-    return promise
-
-}
-
-export const deleteSession = () => {
-    const promise = new Promise((resolve, reject) => {
-        db.transaction(tx => {
-            tx.executeSql(
-                'DELETE FROM sessionUser',
-                [],
-                (__,result) => resolve(result),
-                (__,error) => reject(error),
-            )
-        })
-    })
-
-    return promise
-
+export const insertSession = async ( {localId,email,idToken}) => {
+    try {
+        const db = await SQLite.openDatabaseAsync('session5.db')
+        const newSession = await db.runAsync(
+            'INSERT INTO sessionUser (localId,email,idToken) VALUES (?,?,?)',
+            [localId,email,idToken]
+        )
+        return newSession
+    } catch (error) {
+        return error
+    }
 }
 
 
+export const fetchSession = async () => {
+    try {
+        const db = await SQLite.openDatabaseAsync('session5.db')
+        const sessionUser = await db.getFirstAsync('SELECT * FROM sessionUser')
+        return sessionUser
+    } catch (error) {
+        return error
+    }
+}
+
+
+export const deleteSession = async () => {
+    try {
+        const db = await SQLite.openDatabaseAsync('session5.db')
+        const sessionDeleted = await db.runAsync('DELETE FROM sessionUser')
+        return sessionDeleted
+    } catch (error) {
+        return error
+    }
+}
