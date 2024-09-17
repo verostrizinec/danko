@@ -27,11 +27,7 @@ const Header = ({ title, showBackButton }) => {
         source={require("../../assets/img/danSinFondo.png")}
         style={styles.logo}
       />
-      {idToken && !showBackButton && (
-        <Pressable onPress={onLogout} style={styles.logout}>
-          <MaterialIcons name="logout" size={30} color="white" />
-        </Pressable>
-      )}
+
       <Text style={styles.title}>{title}</Text>
     </View>
   );

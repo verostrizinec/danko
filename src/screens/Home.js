@@ -1,5 +1,6 @@
-import { StyleSheet, View } from 'react-native'
+import { StyleSheet, View, Pressable } from 'react-native'
 import Categories from '../components/Categories'
+
 
 const Home = () => {
 

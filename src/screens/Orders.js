@@ -4,13 +4,13 @@ import { useGetOrdersByUserQuery, useDeleteOrderMutation } from '../services/sho
 import { colors } from '../global/colors';
 
 const Orders = () => {
-  const { data: orders, isSuccess, isError, error, isLoading } = useGetOrdersByUserQuery("1");
+  const { data: orders = [], isSuccess, isError, error, isLoading, refetch } = useGetOrdersByUserQuery("1");
   const [deleteOrder] = useDeleteOrderMutation(); 
 
   const handleDelete = async (id) => {
     try {
-
       await deleteOrder({ userId: "1", orderId: id }).unwrap();
+      refetch();
     } catch (err) {
       console.error("Error deleting order:", err);
     }
@@ -23,7 +23,7 @@ const Orders = () => {
     <View style={styles.container}>
       {isSuccess && (
         <FlatList
-          data={orders}
+          data={Array.isArray(orders) ? orders : []}  // Asegúrate de que orders es un array
           keyExtractor={(item) => item.id.toString()} 
           renderItem={({ item }) => <OrderItem item={item} onDelete={handleDelete} />}
         />

@@ -7,14 +7,17 @@ import { useRegisterMutation } from '../services/auth'
 import { useDispatch } from 'react-redux'
 import { setUser } from '../features/auth/authSlice'
 import { registerSchema } from '../validations/registerSchema'
+import Icon from 'react-native-vector-icons/Ionicons' // Importar íconos
 
-const Register = ({navigation}) => {
+const Register = ({ navigation }) => {
     const [email, setEmail] = useState("")
     const [password, setPassword] = useState("")
     const [confirmPassword, setConfirmPassword] = useState("")
     const [errorEmail, setErrorEmail] = useState("")
     const [errorPassword, setErrorPassword] = useState("")
     const [errorConfirmPassword, setErrorConfirmPassword] = useState("")
+    const [isPasswordVisible, setIsPasswordVisible] = useState(false) // Estado para alternar visibilidad
+    const [isConfirmPasswordVisible, setIsConfirmPasswordVisible] = useState(false) // Estado para alternar visibilidad
     const [triggerRegister, { data, isSuccess, error: registerError }] = useRegisterMutation()
     const dispatch = useDispatch()
 
@@ -30,17 +33,14 @@ const Register = ({navigation}) => {
 
         if (registerError) {
             console.log("Registration error:", registerError)
-            // Aquí puedes manejar errores específicos que vengan de la API si es necesario
         }
     }, [isSuccess, registerError])
 
     const onSubmit = async () => {
         try {
-            console.log("Submit button pressed")
             registerSchema.validateSync({ email, password, confirmPassword })
             await triggerRegister({ email, password })
         } catch (error) {
-            console.log("Validation error:", error)
             switch (error.path) {
                 case "email":
                     setErrorEmail(error.message)
@@ -74,20 +74,47 @@ const Register = ({navigation}) => {
                     isSecure={false}
                     error={errorEmail}
                 />
-                <InputForm
-                    label="Password"
-                    value={password}
-                    onChangeText={(t) => setPassword(t)}
-                    isSecure={true}
-                    error={errorPassword}
-                />
-                <InputForm
-                    label="Confirmar Password"
-                    value={confirmPassword}
-                    onChangeText={(t) => setConfirmPassword(t)}
-                    isSecure={true}
-                    error={errorConfirmPassword}
-                />
+
+                <View style={styles.passwordContainer}>
+                    <InputForm
+                        label="Password"
+                        value={password}
+                        onChangeText={(t) => setPassword(t)}
+                        isSecure={!isPasswordVisible} // Toggle para mostrar/ocultar contraseña
+                        error={errorPassword}
+                    />
+                    <Pressable
+                        style={styles.icon}
+                        onPress={() => setIsPasswordVisible(!isPasswordVisible)}
+                    >
+                        <Icon
+                            name={isPasswordVisible ? 'eye-off' : 'eye'}
+                            size={30}
+                            color="white"
+                        />
+                    </Pressable>
+                </View>
+
+                <View style={styles.passwordContainer}>
+                    <InputForm
+                        label="Confirmar Password"
+                        value={confirmPassword}
+                        onChangeText={(t) => setConfirmPassword(t)}
+                        isSecure={!isConfirmPasswordVisible} // Toggle para mostrar/ocultar confirmación de contraseña
+                        error={errorConfirmPassword}
+                    />
+                    <Pressable
+                        style={styles.icon}
+                        onPress={() => setIsConfirmPasswordVisible(!isConfirmPasswordVisible)}
+                    >
+                        <Icon
+                            name={isConfirmPasswordVisible ? 'eye-off' : 'eye'}
+                            size={30}
+                            color="white"
+                        />
+                    </Pressable>
+                </View>
+
                 <SubmitButton onPress={onSubmit} title="Registrarme" />
                 <Text style={styles.sub}>¿Ya tienes una cuenta?</Text>
                 <Pressable onPress={() => navigation.navigate("Login")}>
@@ -116,9 +143,16 @@ const styles = StyleSheet.create({
         alignItems: "center",
         paddingVertical: 20
     },
-    title: {
-        fontSize: 22,
-        fontFamily: "Lobster"
+    passwordContainer: {
+        flexDirection: 'row',
+        alignItems: 'center',
+        justifyContent: 'space-between',
+        width: '100%',
+    },
+    icon: {
+        position: 'absolute',
+        right: 10,
+        top: 20, // Ajusta según sea necesario
     },
     sub: {
         fontSize: 14,

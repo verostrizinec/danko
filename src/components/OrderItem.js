@@ -3,12 +3,16 @@ import Entypo from '@expo/vector-icons/Entypo';
 import { colors } from '../global/colors';
 
 const OrderItem = ({ item, onDelete }) => {
+  if (!item) {
+    return null;  // Maneja el caso en que item es null o undefined
+  }
+
   return (
     <View style={styles.containerPrincipal}>
       <View style={styles.container}>
         <View style={styles.containerText}>
-          <Text style={styles.date}>{item.createAdt}</Text>
-          <Text style={styles.total}>Total: $ {item.total}</Text>
+          <Text style={styles.date}>{item.createAdt || 'No Date'}</Text>
+          <Text style={styles.total}>Total: $ {item.total || '0.00'}</Text>
         </View>
         <Pressable onPress={() => onDelete(item.id)}>
           <Entypo name="trash" size={24} color="white" />

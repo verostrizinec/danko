@@ -12,14 +12,14 @@ const MainNavigator = () => {
     const idToken = useSelector(state => state.auth.idToken)
     const dispatch = useDispatch()
 
-    useEffect(() =>{
-      (async () =>{
+    useEffect(() => {
+      (async () => {
         const sessions = await fetchSession()
-        if(sessions.row.length){
-        dispatch(setUser(sessions.rows._array[0]))
-      }
+        if(sessions.rows.length){  // Cambiado a sessions.rows.length
+          dispatch(setUser(sessions.rows._array[0]))
+        }
       })()
-    },[])
+    }, [])
 
   return (
    <NavigationContainer>

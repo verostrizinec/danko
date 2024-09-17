@@ -1,16 +1,28 @@
-import { StyleSheet, View, Image, ActivityIndicator } from 'react-native';
+import { StyleSheet, View, Image, ActivityIndicator, Pressable } from 'react-native';
 import React, { useEffect, useState } from 'react';
 import SubmitButton from '../components/SubmitButton';
 import { colors } from '../global/colors';
 import { useSelector } from 'react-redux';
 import { useGetUserProfileQuery } from '../services/shop'; 
+import { useDispatch } from 'react-redux';
+import { deleteSession } from '../db';
+import { clearUser } from '../features/auth/authSlice';
+import MaterialIcons from '@expo/vector-icons/MaterialIcons';
 
 const MyProfile = ({ navigation }) => {
+  const dispatch = useDispatch();
+  const idToken = useSelector(state => state.auth.idToken);
+
   const [image, setImage] = useState("");
   const localId = useSelector(state => state.auth.localId);
   
 
   const { data, error, isLoading } = useGetUserProfileQuery(localId);
+
+  const onLogout = () => {
+    deleteSession();
+    dispatch(clearUser());
+  };
 
   useEffect(() => {
     if (data && data.image) {
@@ -24,6 +36,11 @@ const MyProfile = ({ navigation }) => {
 
   return (
     <View style={styles.container}>
+      {idToken && (
+        <Pressable onPress={onLogout} style={styles.logout}>
+          <MaterialIcons name="logout" size={30} color="white" />
+        </Pressable>
+      )}
       <Image
         style={styles.profile}
         source={image ? { uri: image } : require("../../assets/img/profile (2).png")}
@@ -47,5 +64,8 @@ const styles = StyleSheet.create({
   profile: {
     width: 150,
     height: 150,
+  },
+  logout: {
+    left: 150,
   },
 });

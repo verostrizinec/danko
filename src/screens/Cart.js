@@ -2,7 +2,7 @@ import { StyleSheet, Text, View, FlatList, Pressable } from "react-native";
 import CartItem from "../components/CartItem";
 import { colors } from "../global/colors";
 import { useSelector, useDispatch } from 'react-redux';
-import { clearCart, removeItem } from '../features/cart/cartSlice';  // Asegúrate de importar la acción
+import { clearCart, removeItem, incrementItem, decrementItem } from '../features/cart/cartSlice';  // Asegúrate de importar las acciones de incrementar/decrementar
 import { usePostOrderMutation } from "../services/shop";
 
 const Cart = ({navigation}) => {
@@ -25,12 +25,27 @@ const Cart = ({navigation}) => {
     dispatch(removeItem(id));
   };
 
+  const handleIncrement = (id) => {
+    dispatch(incrementItem(id));
+  };
+
+  const handleDecrement = (id) => {
+    dispatch(decrementItem(id));
+  };
+
   return (
     <View style={styles.container}>
       <FlatList
         data={cart.items}
         keyExtractor={(item) => item.id.toString()}
-        renderItem={({ item }) => <CartItem item={item} onDelete={handleDelete} />}
+        renderItem={({ item }) => (
+          <CartItem 
+            item={item} 
+            onDelete={handleDelete} 
+            onIncrement={handleIncrement}
+            onDecrement={handleDecrement}
+          />
+        )}
       />
       <View style={styles.containerConfirm}>
         <Pressable onPress={handleAddOrder}>
