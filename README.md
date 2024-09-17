@@ -8,8 +8,8 @@
 - Acceso seguro: Para poder acceder a la pantalla de perfil y hacer compras en la app es necesario estar registrado.
 - Información del usuario: Muestra detalles del usuario, nombre y foto de perfil.
 
-![Inicio de Sesión](..\danko\assets\img\dankoSesion.PNG)
-![Perfil](..\danko\assets\img\dankoPerfil.PNG)
+[Inicio de Sesión](..\danko\assets\img\dankoSesion.PNG)
+[Perfil](..\danko\assets\img\dankoPerfil.PNG)
 
 
 ### Autenticación con Firebase
@@ -29,8 +29,8 @@
 - Incluye un buscador para filtrar productos por nombre.
 - Al hacer clic en un producto, se navega a la pantalla de detalles del producto.
 
-![Categorias de Productos](..\danko\assets\img\dankoCategorias.PNG)
-![Productos](..\danko\assets\img\dankoProductos.PNG)
+[Categorias de Productos](..\danko\assets\img\dankoCategorias.PNG)
+[Productos](..\danko\assets\img\dankoProductos.PNG)
 
 ### Pantalla de Detalles del Producto
 
@@ -39,7 +39,7 @@
 - Muestra el precio.
 - Permite agregar el producto al carrito.
 
-![Producto en detalle](..\danko\assets\img\dankoProductosDetail.PNG)
+[Producto en detalle](..\danko\assets\img\dankoProductosDetail.PNG)
 
 ## Tecnologías Utilizadas
 
@@ -54,8 +54,9 @@
 # Contacto
 
 ## 🔗 Links
-![portfolio](https://verostrizinec.github.com)
-![linkedin](https://linkedin.com/veronica-stri)
-![email](verostrizinec@gmail.com)
+[Portfolio](https://verostrizinec.github.io)
+[LinkedIn](https://linkedin.com/in/veronica-stri)
+[Email](mailto:verostrizinec@gmail.com)
+
 
 
