@@ -1,6 +1,6 @@
 # E-Commerce App - React Native
 
-## Este proyecto es una aplicación de comercio electrónico de una tienda de productos hechos en porcelana fria a mano. La tienda es de mi hermana Lucia y surgió luego del fallecimiento de mi papá en el año 2022, en honor a él. Crear la aplicación de su emprendimiento me pareció una linda manera de homenagear a ambos. Está desarrollada con Reac Native.
+### Este proyecto es una aplicación de comercio electrónico de una tienda de productos hechos en porcelana fria a mano. La tienda es de mi hermana Lucia y surgió luego del fallecimiento de mi papá en el año 2022, en honor a él. Crear la aplicación de su emprendimiento me pareció una linda manera de homenajear a ambos. Está desarrollada con Reac Native.
 
 ### Funcionalidades Principales
 
@@ -8,8 +8,8 @@
 - Acceso seguro: Para poder acceder a la pantalla de perfil y hacer compras en la app es necesario estar registrado.
 - Información del usuario: Muestra detalles del usuario, nombre y foto de perfil.
 
-![Inicio de Sesión](C:\Users\veros\Desktop\coder-house\reactNative\danko\assets\img\dankoSesion.PNG)
-![Perfil](C:\Users\veros\Desktop\coder-house\reactNative\danko\assets\img\dankoPerfil.PNG)
+![Inicio de Sesión](..\danko\assets\img\dankoSesion.PNG)
+![Perfil](..\danko\assets\img\dankoPerfil.PNG)
 
 
 ### Autenticación con Firebase
@@ -29,8 +29,8 @@
 - Incluye un buscador para filtrar productos por nombre.
 - Al hacer clic en un producto, se navega a la pantalla de detalles del producto.
 
-![Categorias de Productos](C:\Users\veros\Desktop\coder-house\reactNative\danko\assets\img\dankoCategorias.PNG)
-![Productos](C:\Users\veros\Desktop\coder-house\reactNative\danko\assets\img\dankoProductos.PNG)
+![Categorias de Productos](..\danko\assets\img\dankoCategorias.PNG)
+![Productos](..\danko\assets\img\dankoProductos.PNG)
 
 ### Pantalla de Detalles del Producto
 
@@ -39,7 +39,7 @@
 - Muestra el precio.
 - Permite agregar el producto al carrito.
 
-![Producto en detalle](C:\Users\veros\Desktop\coder-house\reactNative\danko\assets\img\dankoProductosDetail.PNG)
+![Producto en detalle](..\danko\assets\img\dankoProductosDetail.PNG)
 
 ## Tecnologías Utilizadas
 
