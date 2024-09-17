@@ -8,8 +8,8 @@
 - Acceso seguro: Para poder acceder a la pantalla de perfil y hacer compras en la app es necesario estar registrado.
 - Información del usuario: Muestra detalles del usuario, nombre y foto de perfil.
 
--![Inicio de Sesión](/assets/img/dankoSesion.PNG)
--![Perfil](/assets/img/dankoPerfil.PNG)
+<img src="assets/img/dankoSesion.PNG" alt="Inicio de Sesión" width="180"/>
+<img src="assets/img/dankoPerfil.PNG" alt="Perfil" width="180"/>
 
 
 ### Autenticación con Firebase
@@ -29,8 +29,8 @@
 - Incluye un buscador para filtrar productos por nombre.
 - Al hacer clic en un producto, se navega a la pantalla de detalles del producto.
 
--![Categorias de Productos](../danko/assets/img/dankoCategorias.PNG)
--![Productos](../danko/assets/img/dankoProductos.PNG)
+<img src="assets/img/dankoCategorias.PNG" alt="Categorías de Productos" width="180"/>
+<img src="assets/img/dankoProductos.PNG" alt="Productos" width="180"/>
 
 ### Pantalla de Detalles del Producto
 
@@ -39,7 +39,7 @@
 - Muestra el precio.
 - Permite agregar el producto al carrito.
 
--![Producto en detalle](../danko/assets/img/dankoProductosDetail.PNG)
+<img src="assets/img/dankoProductosDetail.PNG" alt="Producto en Detalle" width="180"/>
 
 ## Tecnologías Utilizadas
 
