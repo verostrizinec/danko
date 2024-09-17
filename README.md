@@ -54,9 +54,11 @@
 # Contacto
 
 ## 🔗 Links
--[Portfolio](https://verostrizinec.github.io)
--[LinkedIn](https://linkedin.com/in/veronica-stri)
--[Email](mailto:verostrizinec@gmail.com)
+
+- **Portfolio**: [https://verostrizinec.github.io](https://verostrizinec.github.io)
+- **LinkedIn**: [https://linkedin.com/in/veronica-stri](https://linkedin.com/in/veronica-stri)
+- **Email**: [verostrizinec@gmail.com](mailto:verostrizinec@gmail.com)
+
 
 
 
